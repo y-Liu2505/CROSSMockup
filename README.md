@@ -1,6 +1,6 @@
 # サーバーの起動
 
-- パケージをダウンロードした後、nodeモジュールの付加ダウンロードが必要
+- パケージをCloneしてダウンロードした後、nodeモジュールの付加ダウンロードが必要
 - VSCodeで「CROSSMockup」フォルダーを開く
 - VSCode左上のTerminalを開き、awag-clientに入る
 
