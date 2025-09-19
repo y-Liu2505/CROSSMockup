@@ -1,0 +1,383 @@
+<div class="modal-overlay">
+    <!-- liu-modify 0529 -->
+    <!-- cdkDragRootElement は該当するDialogをドラッグできるにする -->
+    <!-- <div 
+      class="modal-container resizers" 
+      cdkDrag 
+      cdkDragRootElement=".modal-container"
+      #modalContainer > -->
+    <div class="modal-container resizers" #modalContainer >
+      <div cdkDragHandle class="modal-header">
+        <!-- <button class="close-button" (click)="close()">×</button> -->
+        <span class="modal-title">契約一覧</span>
+      </div>
+      <div class="modal-body">
+        <!-- <div class="alert-success">処理が成功しました</div> -->
+        <div class="table-header">
+          <h3 class="result-title">カード</h3>
+        </div>
+        <div>
+          <div>
+            <table class="history-table">
+              <thead>
+                <tr>
+                  <th>明細番号</th>
+                  <th>商品</th>
+                  <th>当事</th>
+                  <th>会員No</th>
+                  <th>商品名</th>
+                  <th>期限</th>
+                  <th>入会日</th>
+                  <th>支払日</th>
+                  <th>ﾘﾝｸ</th>
+                  <th>未決</th>
+                  <th>決済</th>
+                  <th>リボ前</th>
+                  <th>方</th>
+                  <th>CL方</th>
+                  <th>毎月</th>
+                  <th>千単</th>
+                  <th>使バ</th>
+                  <th>帰属</th>
+                  <th>勧誘</th>
+                  <th>延</th>
+                  <th>解</th>
+                  <th>状</th>
+                  <th>主契-家No-法No</th>
+                  <th>会名主</th>
+                  <th>続</th>
+                  <th>生</th>
+                  <th>顧No</th>
+                  <th>付</th>
+                  <th>Pﾘﾝｸ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="dialogCtrls" [class.selected]="0" (click)="onRowClick(0)">
+                  <td>001</td>
+                  <td>C01</td>
+                  <td>本人</td>
+                  <td title="1234-5678-9000-0001">1234-5678-9000-0001</td>
+                  <td title="トヨタ自動車">トヨタ自動車</td>
+                  <td title="01/01">01/01</td>
+                  <td title="25/05/01">25/05/01</td>
+                  <td>01日</td>
+                  <td>001</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>001</td>
+                  <td>残高</td>
+                  <td>残高</td>
+                  <td title="10,001">10,001</td>
+                  <td title="10,001">10,001</td>
+                  <td title="マイツキ">マイツキ</td>
+                  <td title="C.ギフ">C.ギフ</td>
+                  <td title="販売店取次">販売店取次</td>
+                  <td title="延滞中">延滞中</td>
+                  <td title="25/01/01">25/01/01</td>
+                  <td title="任意解約">任意解約</td>
+                  <td title="9999-9999-99901">9999-9999-99901</td>
+                  <td title="9999-9999-99901">9999-9999-99901</td>
+                  <td>子</td>
+                  <td title="S07/01/01">S07/01/01</td>
+                  <td title="9999-9999-99901">9999-9999-99901</td>
+                  <td>001</td>
+                  <td>001</td>
+                </tr>
+                <tr>
+                  <td>001</td>
+                  <td>C01</td>
+                  <td>本人</td>
+                  <td>1234-5678-9000-0001</td>
+                  <td class="tdBgcolor">トヨタ自動車1</td>
+                  <td>01/01</td>
+                  <td>25/05/01</td>
+                  <td>01日</td>
+                  <td>001</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>001</td>
+                  <td>残高</td>
+                  <td>残高</td>
+                  <td>10,001</td>
+                  <td>10,001</td>
+                  <td>マイツキ</td>
+                  <td>C.ギフ</td>
+                  <td class="tdBgcolor">販売店取次</td>
+                  <td>延滞中</td>
+                  <td>25/01/01</td>
+                  <td>任意解約</td>
+                  <td>9999-9999-99901</td>
+                  <td>9999-9999-99901</td>
+                  <td>子</td>
+                  <td>S07/01/01</td>
+                  <td>9999-9999-99901</td>
+                  <td>001</td>
+                  <td>001</td>
+                </tr>
+                <tr>
+                  <td>001</td>
+                  <td>C01</td>
+                  <td>本人</td>
+                  <td>1234-5678-9000-0001</td>
+                  <td>トヨタ自動車1</td>
+                  <td>01/01</td>
+                  <td>25/05/01</td>
+                  <td>01日</td>
+                  <td>001</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>001</td>
+                  <td class="tdBgcolor">残高</td>
+                  <td>残高</td>
+                  <td>10,001</td>
+                  <td>10,001</td>
+                  <td>マイツキ</td>
+                  <td>C.ギフ</td>
+                  <td>販売店取次</td>
+                  <td>延滞中</td>
+                  <td>25/01/01</td>
+                  <td>任意解約</td>
+                  <td>9999-9999-99901</td>
+                  <td>9999-9999-99901</td>
+                  <td>子</td>
+                  <td>S07/01/01</td>
+                  <td>9999-9999-99901</td>
+                  <td>001</td>
+                  <td>001</td>
+                </tr>
+                <tr class="inactiveRow">
+                  <td>001</td>
+                  <td>C01</td>
+                  <td>本人</td>
+                  <td>1234-5678-9000-0001</td>
+                  <td>トヨタ自動車1</td>
+                  <td>01/01</td>
+                  <td>25/05/01</td>
+                  <td>01日</td>
+                  <td>001</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>001</td>
+                  <td>残高</td>
+                  <td>残高</td>
+                  <td>10,001</td>
+                  <td>10,001</td>
+                  <td>マイツキ</td>
+                  <td>C.ギフ</td>
+                  <td>販売店取次</td>
+                  <td>延滞中</td>
+                  <td>25/01/01</td>
+                  <td>任意解約</td>
+                  <td>9999-9999-99901</td>
+                  <td>9999-9999-99901</td>
+                  <td>子</td>
+                  <td>S07/01/01</td>
+                  <td>9999-9999-99901</td>
+                  <td>001</td>
+                  <td>001</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="table-header">
+          <h3 class="result-title">割賦(ﾉﾝﾘ)</h3>
+        </div>
+        <div>
+          <div>
+            <table class="history-table">
+              <thead>
+                <tr>
+                  <th>明細番号</th>
+                  <th>商品</th>
+                  <th>当事</th>
+                  <th>契約No</th>
+                  <th>商品名</th>
+                  <th>最終</th>
+                  <th>受入日</th>
+                  <th>支払日</th>
+                  <th>初回</th>
+                  <th>受入</th>
+                  <th>千単</th>
+                  <th>使バ</th>
+                  <th>販売</th>
+                  <th>車種</th>
+                  <th>登No</th>
+                  <th>延</th>
+                  <th>完</th>
+                  <th>状</th>
+                  <th>主契-保A</th>
+                  <th>顧名</th>
+                  <th>続</th>
+                  <th>生</th>
+                  <th>保B</th>
+                  <th>名</th>
+                  <th>続</th>
+                  <th>生</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>001</td>
+                  <td>002</td>
+                  <td>003</td>
+                  <td>004</td>
+                  <td>005</td>
+                  <td>006</td>
+                  <td>007</td>
+                  <td>008</td>
+                  <td>009</td>
+                  <td>010</td>
+                  <td>011</td>
+                  <td>012</td>
+                  <td>013</td>
+                  <td>014</td>
+                  <td>015</td>
+                  <td>016</td>
+                  <td>017</td>
+                  <td>018</td>
+                  <td>019</td>
+                  <td>020</td>
+                  <td>021</td>
+                  <td>022</td>
+                  <td>023</td>
+                  <td>024</td>
+                  <td>025</td>
+                  <td>026</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="table-header">
+          <h3 class="result-title">割賦(ｳｨｽﾞﾘ)</h3>
+        </div>
+        <div>
+          <div>
+            <table class="history-table">
+              <thead>
+                <tr>
+                  <th>明細番号</th>
+                  <th>商品</th>
+                  <th>当事</th>
+                  <th>契約No</th>
+                  <th>商品名</th>
+                  <th>受入日</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>001</td>
+                  <td>002</td>
+                  <td>003</td>
+                  <td>004</td>
+                  <td>005</td>
+                  <td>006</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="table-header">
+          <h3 class="result-title">証書ロ</h3>
+        </div>
+        <div>
+          <div>
+            <table class="history-table">
+              <thead>
+                <tr>
+                  <th>明細番号</th>
+                  <th>商品</th>
+                  <th>当事</th>
+                  <th>契約No</th>
+                  <th>商品名</th>
+                  <th>最終</th>
+                  <th>受入日</th>
+                  <th>支払日</th>
+                  <th>初回</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>001</td>
+                  <td>002</td>
+                  <td>003</td>
+                  <td>004</td>
+                  <td>005</td>
+                  <td>006</td>
+                  <td>007</td>
+                  <td>008</td>
+                  <td>009</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="table-header">
+          <h3 class="result-title">証書ロ</h3>
+        </div>
+        <div>
+          <div>
+            <table class="history-table">
+              <thead>
+                <tr>
+                  <th>明細番号</th>
+                  <th>商品</th>
+                  <th>当事</th>
+                  <th>受付No</th>
+                  <th>受付日</th>
+                  <th>受入</th>
+                  <th>回数</th>
+                  <th>元金</th>
+                  <th>千単万単</th>
+                  <th>販売</th>
+                  <th>結果</th>
+                  <th>更</th>
+                  <th>状</th>
+                  <th>主契</th>
+                  <th>続</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>001</td>
+                  <td>002</td>
+                  <td>003</td>
+                  <td>004</td>
+                  <td>005</td>
+                  <td>006</td>
+                  <td>007</td>
+                  <td>008</td>
+                  <td>009</td>
+                  <td>010</td>
+                  <td>011</td>
+                  <td>012</td>
+                  <td>013</td>
+                  <td>014</td>
+                  <td>015</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+  
+        <div class="executeBtns">
+          <div class="deleteBtn">
+            <button class="delete-button" (click)="delete()">削除</button>
+            <button class="clear-button" (click)="delete()">クリア</button>
+          </div>
+          <div class="cuBtn">
+            <button class="create-button import-button" (click)="delete()">登録</button>
+            <button class="create-button import-button" (click)="delete()">変更</button>
+            <button class="update-button import-button" (click)="delete()">更新</button>
+            <button class="import-button">取込</button>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="close-button" (click)="close()">閉じる</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

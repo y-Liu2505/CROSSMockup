@@ -1,0 +1,34 @@
+Date : 2025-08-20 08:54:44
+Directory : c:\Users\n-chinh_zd\AWAG_DEPLOY\src\app\creditcode
+Total : 6 files,  997 codes, 196 comments, 66 blanks, all 1259 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| HTML       |          1 |        676 |         56 |          1 |        733 |
+| TypeScript |          4 |        179 |        132 |         37 |        348 |
+| SCSS       |          1 |        142 |          8 |         28 |        178 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                 | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                    |          6 |        997 |        196 |         66 |      1,259 |
+| . (Files)                                                                                                            |          1 |         12 |          1 |          4 |         17 |
+| creditcode-creditcode                                                                                                |          5 |        985 |        195 |         62 |      1,242 |
++----------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                                             | language   | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Users\n-chinh_zd\AWAG_DEPLOY\src\app\creditcode\creditcode-creditcode\creditcode-creditcode-config.ts             | TypeScript |         17 |          5 |          2 |         24 |
+| c:\Users\n-chinh_zd\AWAG_DEPLOY\src\app\creditcode\creditcode-creditcode\creditcode-creditcode-custom.component.scss | SCSS       |        142 |          8 |         28 |        178 |
+| c:\Users\n-chinh_zd\AWAG_DEPLOY\src\app\creditcode\creditcode-creditcode\creditcode-creditcode-custom.component.ts   | TypeScript |         13 |          8 |          3 |         24 |
+| c:\Users\n-chinh_zd\AWAG_DEPLOY\src\app\creditcode\creditcode-creditcode\creditcode-creditcode.component.html        | HTML       |        676 |         56 |          1 |        733 |
+| c:\Users\n-chinh_zd\AWAG_DEPLOY\src\app\creditcode\creditcode-creditcode\creditcode-creditcode.component.ts          | TypeScript |        137 |        118 |         28 |        283 |
+| c:\Users\n-chinh_zd\AWAG_DEPLOY\src\app\creditcode\creditcode.module.ts                                              | TypeScript |         12 |          1 |          4 |         17 |
+| Total                                                                                                                |            |        997 |        196 |         66 |      1,259 |
++----------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

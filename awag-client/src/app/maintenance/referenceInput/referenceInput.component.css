@@ -1,0 +1,273 @@
+.modal-overlay {
+  /* liu-Modify 0529 オーバーレイをすべての画面をカバーし、fixedはドラッグ機能を妨げる */
+    /* position: fixed; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal-container {
+    background: #fff;
+    width: 1300px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: sans-serif;
+    /* liu-add 0529 該当するDialogの初期化位置を確定する */
+    position: fixed;
+    /* 右下より調整できるのみ */
+    /* resize: both; */
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 12px 16px;
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    gap: 12px;
+    /* liu-add 0529 ヘッダにドラッグできるので、マオス仕様を変更する */
+    /* cursor: move; */
+  }
+  
+  /* .close-button {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  } */
+  
+  .alert-success {
+    background-color: #e0f6f0;
+    color: #00897b;
+    padding: 8px 16px;
+    margin: 16px;
+    border-radius: 4px;
+  }
+  
+  .table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    /* margin-bottom: 8px; */
+  }
+  
+  .result-title {
+    /* padding: 0 16px; */
+    /* margin-bottom: 8px; */
+    font-size: 12px !important;
+    font-weight: bold !important;
+    color: #9e9e9e;
+    margin-top: 0.5rem;
+  }
+  
+  .history-table {
+    width: calc(100% - 32px);
+    margin: 0 16px;
+    border-collapse: collapse;
+    table-layout: fixed;
+    overflow: hidden;
+  }
+  
+  .history-table th,
+  .history-table td {
+    border: 1px solid #ccc;
+    padding: 4px;
+    font-size: 12px;
+    word-break: break-word;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  
+  .history-table thead th {
+    background-color: #f0f0f0;
+  }
+  
+  .import-button {
+    padding: 4px 12px;
+    background-color: #25AEAF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  .close-button {
+    padding: 4px 12px;
+    background-color: white;
+    color: black;
+    border: 1px solid #9e9e9e;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .import-button:hover {
+    background-color: #0097a7;
+  }
+  
+  .modal-footer {
+    text-align: right;
+    font-size: 12px;
+    color: #555;
+    padding: 16px;
+    display: flex;
+  }
+  
+  /* liu-add 0529 resize dialog */
+  .resizer {
+    position: absolute;
+    z-index: 10;
+  }
+
+  .resizer.top, .resizer.bottom {
+    left: 0;
+    right: 0;
+    height: 10px;
+    cursor: ns-resize;
+  }
+
+  .resizer.top {
+    top: 0;
+  }
+
+  .resizer.bottom {
+    bottom: 0;
+  }
+
+  .resizer.left, .resizer.right {
+    top: 0;
+    bottom: 0;
+    width: 10px;
+    cursor: ew-resize;
+  }
+
+  .resizer.left {
+    left: 0;
+  }
+
+  .resizer.right {
+    right: 0;
+  }
+
+  .resizer.top-left,
+  .resizer.top-right,
+  .resizer.bottom-left,
+  .resizer.bottom-right {
+    width: 15px;
+    height: 15px;
+    background: transparent;
+  }
+
+  .resizer.top-left {
+    top: 0;
+    left: 0;
+    cursor: nwse-resize;
+  }
+
+  .resizer.top-right {
+    top: 0;
+    right: 0;
+    cursor: nesw-resize;
+  }
+
+  .resizer.bottom-left {
+    bottom: 0;
+    left: 0;
+    cursor: nesw-resize;
+  }
+
+  /* .resizer.resizer.bottom-right {
+    bottom: 0;
+    right: 0;
+    cursor: nwse-resize;
+  } */
+
+  tbody tr td {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 150%;
+  }
+  .executeBtns {
+    text-align: right;
+    font-size: 12px;
+    color: #555;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .delete-button {
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+    /* margin-left: 10px; */
+    color: #25AEAF !important;
+    border: solid 1px #25AEAF !important;
+    background-color: white !important;
+  }
+  .cuBtn {
+    display: flex;
+    justify-content: space-between;
+  }
+  .clear-button {
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+    /* margin-left: 10px; */
+    color: #25AEAF !important;
+    border: solid 1px #25AEAF !important;
+    background-color: white !important;
+    margin-left: 10px;
+  }
+  .searchConditons {
+    background-color: #eeeeee;
+    margin: 0 17px 0 17px;
+  }
+  .inputArea {
+    /* display: flex; */
+    line-height: 150%;
+    margin: 10px 0 10px 0;
+  }
+  .conditionBlock {
+    /* margin-left: 23px; */
+    margin: 10px 23px 10px 23px;
+    width: 20%;
+  }
+  .inputArea.row {
+    width: 50%;
+  }
+  .form-label {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 150%;
+  }
+  .explanation {
+    font-size: 12px;
+    color: #9e9e9e;
+  }
+  .buttonArea {
+    display: flex;
+    justify-content: flex-end;
+    
+  }
+  .search-button {
+    margin: 0 10px 10px 0;
+    width: 100px;
+  }

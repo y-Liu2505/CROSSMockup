@@ -1,0 +1,39 @@
+{
+  "app": {
+    "label": {
+      "sc": {
+        "memo.placeholder": "Write something here.",
+        "memo.button.add": "Add Memo",
+        "memo.button.close": "Close"
+      }
+    }
+  },
+  "custom": {
+    "msg": {
+      "E003": "You cannot enter a registered name starting with IBM.",
+      "E005": "No employee information selected.",
+      "E006": "Please press the 'Add' button after displaying the last page."
+    },
+    "prj": {
+      "uc": {
+        "inputcustomer": {
+          "sc": {
+            "confirm": {
+              "fl": {
+                "confirmmodal.body": "Are you sure you want to start the approval process?",
+                "confirmmodal.dismissbutton": "Cancel",
+                "confirmmodal.closebutton": "Execute"
+              }
+            },
+            "input" : {
+              "F1Label": "F1 Sample",
+              "F2Label": "F2 Sample",
+              "F3Label": "F3 Sample",
+              "F4Label": "F4 Sample"
+            }
+          }
+        }
+      }
+    }
+  }
+}

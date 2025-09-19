@@ -1,0 +1,21 @@
+<div class="alert-content mt-3" [hidden]="getAlerts().length == 0">
+@for (alert of getAlerts(); track $index ; let i = $index) {
+  <ngb-alert [type]="alert.style == 'error' ? 'danger': alert.style" [dismissible]="true" (closed)="closeNotification(i)" class="alert alert-dismissible awagAlert-close">
+  @switch (alert.style) {
+    @case ('success') {
+      <i class="bi bi-check-circle-fill me-2" aria-hidden="true"></i>
+    } @case ('info') {
+      <i class="bi bi-info-circle-fill me-2" aria-hidden="true"></i>
+    } @case ('warning') {
+      <i class="bi bi-exclamation-triangle-fill me-2" aria-hidden="true"></i>
+    } @case ('error') {
+      <i class="bi bi-exclamation-triangle-fill me-2" aria-hidden="true"></i>
+    } @default {
+      <i class="bi bi-info-fill me-2" aria-hidden="true"></i>
+    }
+  }
+    <span class="awagAlert-message" id="awagAlert-message-{{i}}">{{alert.message}}</span>
+    <span class="awagAlert-code" id="awagAlert-code-{{i}}" [hidden]="alert.code == null || alert.code == ''">[{{alert.code}}]</span>
+  </ngb-alert>
+}
+</div>

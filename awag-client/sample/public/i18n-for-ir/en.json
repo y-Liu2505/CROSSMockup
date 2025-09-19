@@ -1,0 +1,1213 @@
+{
+  "awag": {
+    "msg": {
+      "BASE_COMPONENT_API_RES_0": "Network is unreachable.",
+      "BASE_COMPONENT_API_RES_401": "Log in to proceed process.",
+      "BASE_COMPONENT_API_RES_403": "Operation not permitted.",
+      "BASE_COMPONENT_API_RES_DEFAULT": "System error.",
+      "SCREEN_COMPONENT_AWAGSEARCH_204": "No records found.",
+      "SCREEN_COMPONENT_AWAGSELECT_204": "Target record not found.",
+      "AUTH_ACCTL_PATH_NOT_AUTHORIZED": "Log in to proceed process.",
+      "AUTOCOMPLETE_API_RES_ERROR_DEFAULT": "Failed to get suggestion list",
+      "NAME_VALUE_LOAD_FAILED": " load failed. Detail:",
+      "StringFormat.Type.HALF_NUM": "single-byte numeric, ",
+      "StringFormat.Type.HALF_CHAR": "single-byte, ",
+      "StringFormat.Type.HALF_NUM_CHAR": "single-byte alphanumeric, ",
+      "StringFormat.Type.FULL_NUM": "multi-byte numeric, ",
+      "StringFormat.Type.FULL_CHAR": "multi-byte, ",
+      "StringFormat.Type.FULL_HIRAGANA": "hiragana, ",
+      "StringFormat.Type.FULL_KATAKANA": "multi-byte katakana, ",
+      "StringFormat.Type.ALL": "",
+      "DateTime.Type.DATE": "yyyy-MM-dd",
+      "DateTime.Type.TIME": "HH:mm",
+      "DateTime.Type.TIME_SECOND": "HH:mm:ss",
+      "DateTime.Type.DATETIME": "yyyy-MM-dd HH:mm:ss",
+      "DateTime.Type.TIMESTAMP": "yyyy-MM-dd HH:mm:ss.SSSSSS",
+      "Number.Type.SMALLINT": "single-byte numeric",
+      "Number.Type.INTEGER": "single-byte numeric",
+      "Number.Type.BIGINT": "single-byte numeric",
+      "Number.Type.FLOAT": "integer {{integer}} length. fraction {{fraction}} length",
+      "Number.Type.DOUBLE": "integer {{integer}} length. fraction {{fraction}} length",
+      "Number.Type.DECIMAL": "integer {{integer}} length. fraction {{fraction}} length",
+      "StringFormat.Type.REGEXP": "invalid format",
+      "StringFormat.Type._CUSTOM": "invalid format",
+      "BooleanFormat.Type.BOOLEAN": "true or false",
+      "Format.FormatType.ALL": "any characters",
+      "Format.FormatType.DEFAULT": "invalid format",
+      "Format.FormatType.common.lengthmsg.min": "{{min}} or more characters",
+      "Format.FormatType.common.lengthmsg.max": "{{max}} or less characters",
+      "Format.FormatType.common.lengthmsg.minmax": "{{min}} or more, {{max}} or less characters",
+      "Format.FormatType.common.lengthmsg.match": "{{length}} characters",
+      "Validation.error": "must be {{validationFormat}}.",
+      "InvalidNavigate.error": "An unauthorized screen transition was detected. Please start over from the menu."
+    },
+    "label": {
+      "sc": {
+        "home": "Home",
+        "settings": "Settings",
+        "user": "User information",
+        "user.login": "Login",
+        "user.logout": "Logout",
+        "lang.japanese": "Language - Japanese",
+        "lang.english": "Language - English",
+        "theme": "Theme",
+        "color.light": "Light",
+        "color.dark": "Dark",
+        "color.auto": "Auto",
+        "menu": "Menu",
+        "home.topmessage": "Start from menu.",
+        "login.userid": "User ID",
+        "login.password": "Password",
+        "login.button.awagLogin": "Login",
+        "login.button.awagLoginCancel": "Cancel",
+        "logout.titlelabel": "Logout",
+        "logout.title": "Confirm",
+        "logout.topmessage": "Do you want to log out?",
+        "logout.button.ok": "Yes",
+        "logout.button.cancel": "No",
+        "confirmmodal.body": "Are you sure you wan to execute?",
+        "confirmmodal.dismissbutton": "No",
+        "confirmmodal.closebutton": "Yes",
+        "confirmmodal.navigation": "The menu has been selected. If you selected it by mistake, please choose 'No.' Selecting 'Yes' will proceed.",
+        "navigation.open": "Open",
+        "navigation.close": "Close",
+        "navigation.login": "Login",
+        "navigation.menutoggle.open": "Open menu",
+        "navigation.menutoggle.close": "Close menu",
+        "navigation.menuswitcher.open": "Open toggle menu",
+        "navigation.menuswitcher.close": "Close toggle menu",
+        "navigation.menuswitcher": "Toggle menu",
+        "navigation.menuswitcher.ja": "Switch to Japanese",
+        "navigation.menuswitcher.en": "Switch to English",
+        "navigation.menuside": "Side navigation",
+        "navigation.breadcrumb": "Breadcrumb",
+        "navigation.backtotop": "Back to top",
+        "navigation.confirmdialog.message": "Are you sure you want to leave this page? Your changes may not be saved.",
+        "tab.list": "List of tabs",
+        "tab.list.scroll.left": "Scroll to left",
+        "tab.list.scroll.right": "Scroll to right",
+        "appmodal.okbutton": "OK",
+        "appmodal.cancelbutton": "CANCEL",
+        "standard.awagSearch.button.clear": "Clear",
+        "gridtable.validationerror.required": "Required",
+        "fileselect.button": "Choose file",
+        "fileselect.nofileselected": "No file chosen",
+        "fileselect.dnd": "Drop a file in this area or click to select a file",
+        "fileselect.delete": "Delete",
+        "checkbox.required": "A check on the checkbox is required",
+        "checkbox.description": "You can check it",
+        "radio.required": "A check on the radio-button is required",
+        "radio.description": "You can select it",
+        "select.required": "A selection is required",
+        "select.description": "You can select it",
+        "select.selected": "Total items selected:",
+        "tooltip": "Additional information",
+        "input.required": " (Required)",
+        "title.attribute.required": "Required",
+        "list.hidden.label": "Select from list",
+        "list.select.label": "Select row",
+        "list.selectall.label": "Select all rows",
+        "list.sort.label": "default",
+        "list.sort.label.default": "Click to sort rows by {{name}} header in ascending order",
+        "list.sort.label.ascending": "Click to sort rows by Rule {{name}} header in descending order",
+        "list.sort.item": "Sort by ",
+        "list.scroll.top": "Scroll to top",
+        "list.scroll.right": "Scroll to right",
+        "list.scroll.left": "Scroll to left",
+        "list.scroll.bottom": "Scroll to bottom",
+        "pagination": "Page navigation",
+        "pagination.len.select": "Items per page",
+        "pagination.pager.total": "pages",
+        "pagination.pager.pagenum": "of",
+        "pagination.info.total": "items",
+        "pagination.info.range": "of",
+        "pagination.info.pages1": "Page number, of",
+        "pagination.info.pages2": "pages",
+        "pagination.info.items": "items",
+        "pagination.next": "Next page",
+        "pagination.prev": "Previous page"
+      }
+    },
+    "prj": {
+      "name": "AWAG Sales Supporting System",
+      "cd": {
+        "enrollmentStatusOpts": {
+          "": "Unspecified",
+          "0": "Tenure",
+          "1": "On leave",
+          "2": "Retired"
+        },
+        "searchApproveOpts": {
+          "000": "Approved",
+          "100": "Not Approved",
+          "999": "All"
+        },
+        "approveOpts": {
+          "000": "Pre Approved",
+          "100": "Approved"
+        },
+        "sortOrderOpts": {
+          "employeeno": "employeeno",
+          "deptcd": "deptcd",
+          "name": "name",
+          "nameen": "name(English)",
+          "tel": "tel",
+          "starttime": "starttime",
+          "closingtime": "closingtime",
+          "version": "version",
+          "enrollmentstatus": "enrollmentstatus"
+        },
+        "rankOpts2": {
+          "A00": "Type-A",
+          "B00": "Type-B"
+        },
+        "rankOpts": {
+          "A00": "Rank A",
+          "B00": "Rank B",
+          "C00": "Rank C"
+        },
+        "class2Opts": {
+          "": "   "
+        },
+        "validOpts": {
+          "true": "Valid",
+          "false": "Invalid"
+        }
+      },
+      "uc": {
+        "approve": {
+          "name": "approve",
+          "description": "This feature enables batch updates of multiple data entries in a list format by applying approval checks before updating.",
+          "sc": {
+            "gridconfirm": {
+              "name": "gridconfirm",
+              "fl": {
+                "list._name": "list",
+                "list.customerid": "customerid",
+                "list.nameen": "name(English)",
+                "list.nameen.table_header_group": "customer name",
+                "list.name": "name",
+                "list.name.table_header_group": "customer name",
+                "list.staff.name": "staff.name",
+                "list.approvelog.comment": "approvelog.comment",
+                "list.approvelog.rank": "approvelog.rank",
+                "list.approvelog.status": "approvelog.status",
+                "list.checkbox": "checkbox",
+                "list.back": "back",
+                "list.confirm": "confirm"
+              }
+            },
+            "gridinput": {
+              "name": "gridinput",
+              "fl": {
+                "list._name": "list",
+                "list.customerid": "customerid",
+                "list.nameen": "name(English)",
+                "list.nameen.table_header_group": "name",
+                "list.name": "name",
+                "list.name.table_header_group": "name",
+                "list.staff.name": "staff.name",
+                "list.approvelog.comment": "approvelog.comment",
+                "list.approvelog.comment.placeholder": "20 or less multi-byte",
+                "list.approvelog.rank": "approvelog.rank",
+                "list.approvelog.status": "approvelog.status",
+                "list.checkbox": "checkbox",
+                "list.awaginit": "awagInit",
+                "list.awaggridconfirm": "awagGridConfirm",
+                "_group1._name": "Search",
+                "_group1.checkbox": "Condition",
+                "_group1.awagsearch": "ReSearch"
+              }
+            },
+            "thanks": {
+              "name": "thanks",
+              "fl": {
+                "root_field_group.awaggoback": "Back"
+              }
+            }
+          }
+        },
+        "contact": {
+          "name": "contact",
+          "description": "Customer-specific information is displayed in a card-style list. The contact history update includes a modal screen for selecting the responsible person.",
+          "sc": {
+            "add": {
+              "name": "add",
+              "fl": {
+                "root_field_group.customerid": "customerid",
+                "root_field_group.contactid": "contactid",
+                "root_field_group.inchargeid": "inchargeid",
+                "root_field_group.inchargeid.placeholder": "8 single-byte",
+                "root_field_group.inchargename": "inchargename",
+                "root_field_group.inchargename.placeholder": "",
+                "root_field_group.description": "description",
+                "root_field_group.description.placeholder": "",
+                "root_field_group.salescd": "salescd",
+                "root_field_group.salescd.placeholder": "10 or less multi-byte numeric",
+                "root_field_group.ozz": "ozz",
+                "root_field_group.ozz.placeholder": "integer 3 length. fraction 2 length",
+                "root_field_group.awaggoback": "Back",
+                "root_field_group.confirm": "confirm"
+              }
+            },
+            "addconfirm": {
+              "name": "addconfirm",
+              "fl": {
+                "root_field_group.customerid": "customerid",
+                "root_field_group.contactid": "contactid",
+                "root_field_group.inchargeid": "inchargeid",
+                "root_field_group.inchargename": "inchargename",
+                "root_field_group.description": "description",
+                "root_field_group.description.placeholder": "",
+                "root_field_group.salescd": "salescd",
+                "root_field_group.ozz": "ozz",
+                "root_field_group.awaggoback": "Back",
+                "root_field_group.add": "add"
+              }
+            },
+            "deleteconfirm": {
+              "name": "deleteconfirm",
+              "fl": {
+                "root_field_group.customerid": "customerid",
+                "root_field_group.contactid": "contactid",
+                "root_field_group.inchargeid": "inchargeid",
+                "root_field_group.description": "description",
+                "root_field_group.description.placeholder": "",
+                "root_field_group.salescd": "salescd",
+                "root_field_group.ozz": "ozz",
+                "root_field_group.awaggoback": "Back",
+                "root_field_group.delete": "delete"
+              }
+            },
+            "managecontact": {
+              "name": "managecontact",
+              "fl": {
+                "_group0._name": "customer info",
+                "_group0.customerid": "customerid",
+                "_group0.nameen": "name(English)",
+                "_group0.name": "name",
+                "_group0.staff.name": "staff.name",
+                "contacts._name": "contacts",
+                "contacts.contactid": "contactid",
+                "contacts.inchargeid": "inchargeid",
+                "contacts.description": "description",
+                "contacts.salescd": "salescd",
+                "contacts.ozz": "ozz",
+                "contacts.add": "add"
+              }
+            },
+            "search": {
+              "name": "search",
+              "fl": {
+                "_group0._name": "search options",
+                "_group0.customerid": "customerid",
+                "_group0.customerid.placeholder": "8 single-byte numeric",
+                "_group0.nameen": "name(English)",
+                "_group0.nameen.placeholder": "2 or more, 30 or less single-byte",
+                "_group0.name": "name",
+                "_group0.name.placeholder": "2 or more, 10 or less multi-byte",
+                "_group0.inchargeid": "inchargeid",
+                "_group0.inchargeid.placeholder": "8 single-byte",
+                "_group0.awagsearch": "search",
+                "list._name": "list",
+                "list.gocontact": "goContact",
+                "list.customerid": "customerid",
+                "list.nameen": "name(English)",
+                "list.name": "name",
+                "list.inchargeid": "inchargeid",
+                "list.rank": "rank",
+                "list.custclass1": "custclass1",
+                "list.checkbox": "checkbox"
+              }
+            },
+            "thanks": {
+              "name": "thanks",
+              "fl": {
+                "root_field_group.goback": "goback"
+              }
+            },
+            "update": {
+              "name": "update",
+              "fl": {
+                "root_field_group.customerid": "customerid",
+                "root_field_group.contactid": "contactid",
+                "root_field_group.inchargeid": "inchargeid",
+                "root_field_group.inchargeid.placeholder": "8 single-byte",
+                "root_field_group.selectemployee": "select employee",
+                "root_field_group.referencecustomer": "reference customer",
+                "root_field_group.description": "description",
+                "root_field_group.description.placeholder": "",
+                "root_field_group.salescd": "salescd",
+                "root_field_group.salescd.placeholder": "10 or less multi-byte numeric",
+                "root_field_group.ozz": "ozz",
+                "root_field_group.ozz.placeholder": "integer 3 length. fraction 2 length",
+                "root_field_group.awaggoback": "Back",
+                "root_field_group.deletecontact": "deleteContact",
+                "root_field_group.confirm": "confirm"
+              }
+            },
+            "updateconfirm": {
+              "name": "updateconfirm",
+              "fl": {
+                "root_field_group.customerid": "customerid",
+                "root_field_group.contactid": "contactid",
+                "root_field_group.inchargeid": "inchargeid",
+                "root_field_group.description": "description",
+                "root_field_group.description.placeholder": "",
+                "root_field_group.salescd": "salescd",
+                "root_field_group.ozz": "ozz",
+                "root_field_group.awaggoback": "Back",
+                "root_field_group.update": "update"
+              }
+            }
+          }
+        },
+        "employee": {
+          "name": "employee",
+          "description": "Includes functionality for switching search methods using tab display and navigating to the previous or next item in the list on the reference screen.",
+          "sc": {
+            "add": {
+              "name": "add",
+              "fl": {
+                "root_field_group.message": "Please enter the employee information to be registered.",
+                "root_field_group.employeeno": "employeeno",
+                "root_field_group.employeeno.placeholder": "1 or more, 8 or less single-byte",
+                "root_field_group.name": "name",
+                "root_field_group.name.placeholder": "1 or more, 10 or less multi-byte",
+                "root_field_group.role": "role",
+                "root_field_group.spacer1": "",
+                "root_field_group.deptcd": "deptcd",
+                "root_field_group.deptcd.placeholder": "1 or more, 5 or less single-byte",
+                "root_field_group.nameen": "name(English)",
+                "root_field_group.nameen.placeholder": "1 or more, 20 or less single-byte",
+                "root_field_group.tel": "tel",
+                "root_field_group.tel.validationMessage": "Please enter the phone number with hyphens.",
+                "root_field_group.tel.placeholder": "telphone-number with hyphens",
+                "root_field_group.spacer2": "",
+                "root_field_group.starttime": "starttime",
+                "root_field_group.starttime.placeholder": "HH:mm",
+                "root_field_group.closingtime": "closingtime",
+                "root_field_group.closingtime.placeholder": "HH:mm",
+                "root_field_group.enrollmentstatus": "enrollmentstatus",
+                "root_field_group.awaggoback": "Back",
+                "root_field_group.confirm": "Confirm"
+              }
+            },
+            "addconfirm": {
+              "name": "addconfirm",
+              "fl": {
+                "root_field_group.message": "Add employee information with the following contents. Is it OK ?",
+                "root_field_group.employeeno": "employeeno",
+                "root_field_group.name": "name",
+                "root_field_group.role": "role",
+                "root_field_group.spacer1": "",
+                "root_field_group.deptcd": "deptcd",
+                "root_field_group.nameen": "name(English)",
+                "root_field_group.tel": "tel",
+                "root_field_group.spacer2": "",
+                "root_field_group.starttime": "starttime",
+                "root_field_group.closingtime": "closingtime",
+                "root_field_group.enrollmentstatus": "enrollmentstatus",
+                "root_field_group.awaggoback": "Back",
+                "root_field_group.checkexists": "Check exists",
+                "root_field_group.add": "Add"
+              }
+            },
+            "addthanks": {
+              "name": "addthanks",
+              "fl": {
+                "root_field_group.message": "Registration of employee information has been completed successfully.",
+                "root_field_group.employeeno": "employeeno",
+                "root_field_group.name": "name",
+                "root_field_group.role": "role",
+                "root_field_group.spacer1": "",
+                "root_field_group.deptcd": "deptcd",
+                "root_field_group.nameen": "name(English)",
+                "root_field_group.tel": "tel",
+                "root_field_group.spacer2": "",
+                "root_field_group.starttime": "starttime",
+                "root_field_group.closingtime": "closingtime",
+                "root_field_group.enrollmentstatus": "enrollmentstatus",
+                "root_field_group.awaggoback": "Back"
+              }
+            },
+            "deleteconfirm": {
+              "name": "deleteconfirm",
+              "fl": {
+                "root_field_group.message": "Delete the following employee information. Is it OK ?",
+                "root_field_group.employeeno": "employeeno",
+                "root_field_group.name": "name",
+                "root_field_group.role": "role",
+                "root_field_group.spacer1": "",
+                "root_field_group.deptcd": "deptcd",
+                "root_field_group.nameen": "name(English)",
+                "root_field_group.tel": "tel",
+                "root_field_group.spacer2": "",
+                "root_field_group.starttime": "starttime",
+                "root_field_group.closingtime": "closingtime",
+                "root_field_group.enrollmentstatus": "enrollmentstatus",
+                "root_field_group.awaggoback": "Back",
+                "root_field_group.delete": "Delete"
+              }
+            },
+            "deletethanks": {
+              "name": "deletethanks",
+              "fl": {
+                "root_field_group.message": "The deletion of employee information has been completed successfully.",
+                "root_field_group.employeeno": "employeeno",
+                "root_field_group.name": "name",
+                "root_field_group.role": "role",
+                "root_field_group.spacer1": "",
+                "root_field_group.deptcd": "deptcd",
+                "root_field_group.nameen": "name(English)",
+                "root_field_group.tel": "tel",
+                "root_field_group.spacer2": "",
+                "root_field_group.starttime": "starttime",
+                "root_field_group.closingtime": "closingtime",
+                "root_field_group.enrollmentstatus": "enrollmentstatus",
+                "root_field_group.awaggoback": "Back"
+              }
+            },
+            "search": {
+              "name": "search",
+              "fl": {
+                "_group0._name": "search conditions",
+                "_group0._tabname": "search conditions",
+                "_group0.message": "Please specify employee search conditions.",
+                "_group0.employeeno_tmp": "employeeno",
+                "_group0.employeeno_tmp.placeholder": "1 or more, 8 or less single-byte",
+                "_group0.name_tmp": "name",
+                "_group0.name_tmp.placeholder": "1 or more, 10 or less multi-byte",
+                "_group0.simplesearch": "Search",
+                "_group1._name": "search conditions(Detail)",
+                "_group1._tabname": "search conditions(Detail)",
+                "_group1.message2": "Please specify detailed employee search conditions. If you specify more than one, it will be searched by AND condition.",
+                "_group1.employeeno": "employeeno",
+                "_group1.employeeno.placeholder": "1 or more, 8 or less single-byte",
+                "_group1.name": "name",
+                "_group1.name.placeholder": "1 or more, 10 or less multi-byte",
+                "_group1.role": "role",
+                "_group1.spacer1": "",
+                "_group1.deptcd": "deptcd",
+                "_group1.deptcd.placeholder": "1 or more, 5 or less single-byte",
+                "_group1.nameen": "name(English)",
+                "_group1.nameen.placeholder": "1 or more, 20 or less single-byte",
+                "_group1.tel": "tel",
+                "_group1.tel.validationMessage": "Please enter the phone number with hyphens.",
+                "_group1.tel.placeholder": "telphone-number with hyphens",
+                "_group1.spacer2": "",
+                "_group1.starttime_from": "starttime(From)",
+                "_group1.starttime_from.placeholder": "HH:mm",
+                "_group1.starttime_to": "starttime(To)",
+                "_group1.starttime_to.placeholder": "HH:mm",
+                "_group1.closingtime_from": "closingtime(From)",
+                "_group1.closingtime_from.placeholder": "HH:mm",
+                "_group1.closingtime_to": "closingtime(To)",
+                "_group1.closingtime_to.placeholder": "HH:mm",
+                "_group1.enrollmentstatus": "enrollmentstatus",
+                "_group1.sortorder": "sortorder",
+                "_group1.awagsearch": "Search",
+                "list.static_text_upper_message" : "A list of employee information.",
+                "list._name": "list",
+                "list.awagselect": "Select",
+                "list.employeeno": "employeeno",
+                "list.deptcd": "deptcd",
+                "list.name": "name",
+                "list.nameen": "name(English)",
+                "list.tel": "tel",
+                "list.starttime": "starttime",
+                "list.closingtime": "closingtime",
+                "list.enrollmentstatus": "enrollmentstatus",
+                "list.role": "role",
+                "list.view": "View",
+                "list.update": "Update",
+                "list.delete": "Delete",
+                "list.add": "Add"
+              }
+            },
+            "update": {
+              "name": "update",
+              "fl": {
+                "root_field_group.message": "Please enter the updated content of the employee information.",
+                "root_field_group.employeeno": "employeeno",
+                "root_field_group.name": "name",
+                "root_field_group.name.placeholder": "1 or more, 10 or less multi-byte",
+                "root_field_group.role": "role",
+                "root_field_group.spacer1": "",
+                "root_field_group.deptcd": "deptcd",
+                "root_field_group.deptcd.placeholder": "1 or more, 5 or less single-byte",
+                "root_field_group.nameen": "name(English)",
+                "root_field_group.nameen.placeholder": "1 or more, 20 or less single-byte",
+                "root_field_group.tel": "tel",
+                "root_field_group.tel.validationMessage": "Please enter the phone number with hyphens.",
+                "root_field_group.tel.placeholder": "telphone-number with hyphens",
+                "root_field_group.spacer2": "",
+                "root_field_group.starttime": "starttime",
+                "root_field_group.starttime.placeholder": "HH:mm",
+                "root_field_group.closingtime": "closingtime",
+                "root_field_group.closingtime.placeholder": "HH:mm",
+                "root_field_group.enrollmentstatus": "enrollmentstatus",
+                "root_field_group.awaggoback": "Back",
+                "root_field_group.confirm": "Confirm"
+              }
+            },
+            "updateconfirm": {
+              "name": "updateconfirm",
+              "fl": {
+                "root_field_group.message": "Employee information will be updated with the following contents. Is it OK ?",
+                "root_field_group.employeeno": "employeeno",
+                "root_field_group.name": "name",
+                "root_field_group.role": "role",
+                "root_field_group.spacer1": "",
+                "root_field_group.deptcd": "deptcd",
+                "root_field_group.nameen": "name(English)",
+                "root_field_group.tel": "tel",
+                "root_field_group.spacer2": "",
+                "root_field_group.starttime": "starttime",
+                "root_field_group.closingtime": "closingtime",
+                "root_field_group.enrollmentstatus": "enrollmentstatus",
+                "root_field_group.awaggoback": "Back",
+                "root_field_group.update": "Update"
+              }
+            },
+            "updatethanks": {
+              "name": "updatethanks",
+              "fl": {
+                "root_field_group.message": "The update of employee information has been completed normally.",
+                "root_field_group.employeeno": "employeeno",
+                "root_field_group.name": "name",
+                "root_field_group.role": "role",
+                "root_field_group.spacer1": "",
+                "root_field_group.deptcd": "deptcd",
+                "root_field_group.nameen": "name(English)",
+                "root_field_group.tel": "tel",
+                "root_field_group.spacer2": "",
+                "root_field_group.starttime": "starttime",
+                "root_field_group.closingtime": "closingtime",
+                "root_field_group.enrollmentstatus": "enrollmentstatus",
+                "root_field_group.awaggoback": "Back"
+              }
+            },
+            "view": {
+              "name": "view",
+              "fl": {
+                "root_field_group.message": "Employee information.",
+                "root_field_group.employeeno": "employeeno",
+                "root_field_group.name": "name",
+                "root_field_group.role": "role",
+                "root_field_group.spacer1": "",
+                "root_field_group.deptcd": "deptcd",
+                "root_field_group.nameen": "name(English)",
+                "root_field_group.tel": "tel",
+                "root_field_group.spacer2": "",
+                "root_field_group.starttime": "starttime",
+                "root_field_group.closingtime": "closingtime",
+                "root_field_group.enrollmentstatus": "enrollmentstatus",
+                "root_field_group.awagprev": "Prev",
+                "root_field_group.awagnext": "Next",
+                "root_field_group.awaggoback": "Back"
+              }
+            }
+          }
+        },
+        "grid-employee": {
+          "name": "employee list",
+          "description": "Includes functionality for batch updates in a list format, as well as adding new rows for data registration.",
+          "sc": {
+            "grid-employee-confirm": {
+              "name": "confirm",
+              "fl": {
+                "list._name": "list",
+                "list.employeeno": "employeeno",
+                "list.deptcd": "deptcd",
+                "list.name": "name",
+                "list.nameen": "name(English)",
+                "list.tel": "tel",
+                "list.starttime": "starttime",
+                "list.closingtime": "closingtime",
+                "list.enrollmentstatus": "enrollmentstatus",
+                "list.role": "role",
+                "list.delete": "Delete",
+                "list.add": "Add",
+                "list.update": "Update"
+              }
+            },
+            "grid-employee-input": {
+              "name": "input",
+              "fl": {
+                "list._name": "list",
+                "list.employeeno": "employeeno",
+                "list.employeeno.placeholder": "1 or more, 8 or less single-byte",
+                "list.deptcd": "deptcd",
+                "list.deptcd.placeholder": "1 or more, 5 or less single-byte",
+                "list.name": "name",
+                "list.name.placeholder": "1 or more, 10 or less single-byte",
+                "list.nameen": "name(English)",
+                "list.nameen.placeholder": "1 or more, 20 or less single-byte",
+                "list.tel": "tel",
+                "list.tel.validationMessage": "Please enter the phone number with hyphens.",
+                "list.tel.placeholder": "telphone-number with hyphens",
+                "list.starttime": "starttime",
+                "list.starttime.placeholder": "HH:mm",
+                "list.closingtime": "closingtime",
+                "list.closingtime.placeholder": "HH:mm",
+                "list.enrollmentstatus": "enrollmentstatus",
+                "list.role": "role",
+                "list.awaginit": "Initialize",
+                "list.addrow": "Add Row",
+                "list.awaggridconfirm": "Confirm"
+              }
+            }
+          }
+        },
+        "inputassist": {
+          "name": "inputassist",
+          "description": "",
+          "sc": {
+            "staffsearch": {
+              "name": "staffsearch",
+              "fl": {
+                "_group0._name": "search options",
+                "_group0.employeeno": "employeeno",
+                "_group0.employeeno.placeholder": "1 or more, 8 or less single-byte",
+                "_group0.deptcd": "deptcd",
+                "_group0.deptcd.placeholder": "1 or more, 5 or less single-byte",
+                "_group0.name": "name",
+                "_group0.name.placeholder": "1 or more, 10 or less multi-byte",
+                "_group0.nameen": "name(English)",
+                "_group0.nameen.placeholder": "1 or more, 20 or less single-byte",
+                "_group0.tel": "tel",
+                "_group0.tel.placeholder": "1 or more, 13 or less single-byte",
+                "_group0.awagsearch": "search",
+                "list._name": "list",
+                "list.select": "select",
+                "list.employeeno": "employeeno",
+                "list.deptcd": "deptcd",
+                "list.name": "name",
+                "list.nameen": "name(English)",
+                "list.tel": "tel",
+                "list.cancel": "cancel"
+              }
+            }
+          }
+        },
+        "inputcustomer": {
+          "name": "inputcustomer",
+          "description": "This is a simple data registration example. It includes implementations where the dropdown options for Customer Category 1 and 2 are linked and where the responsible person can be selected from a shared screen.",
+          "sc": {
+            "confirm": {
+              "name": "confirm",
+              "fl": {
+                "root_field_group.nameen": "name(English)",
+                "root_field_group.name": "name",
+                "root_field_group.inchargeid": "inchargeid",
+                "root_field_group.inchargename": "inchargename",
+                "root_field_group.registereddate": "registereddate",
+                "root_field_group.hiragana": "hiragana",
+                "root_field_group.katakana": "katakana",
+                "root_field_group.description": "description",
+                "root_field_group.isin": "isin",
+                "root_field_group.houjinno": "houjinno",
+                "root_field_group.rank": "rank",
+                "root_field_group.custclass1": "custclass1",
+                "root_field_group.custclass2": "custclass2",
+                "root_field_group.awaggoback": "Back",
+                "root_field_group.confirm": "confirm"
+              }
+            },
+            "input": {
+              "name": "input",
+              "fl": {
+                "root_field_group.nameen": "name(English)",
+                "root_field_group.nameen.placeholder": "2 or more, 30 or less single-byte",
+                "root_field_group.name": "name",
+                "root_field_group.name.placeholder": "2 or more, 10 or less multi-byte",
+                "root_field_group.dummy": "dummy",
+                "root_field_group.inchargeid": "inchargeid",
+                "root_field_group.inchargeid.validationMessage": "Please enter in 2 uppercase letters and 6 digits.",
+                "root_field_group.inchargeid.placeholder": "8 single-byte",
+                "root_field_group.inchargename": "inchargename",
+                "root_field_group.inchargename.placeholder": "",
+                "root_field_group.registereddate": "registereddate",
+                "root_field_group.registereddate.placeholder": "yyyy-mm-dd",
+                "root_field_group.hiragana": "hiragana",
+                "root_field_group.hiragana.placeholder": "10 or less hiragana",
+                "root_field_group.katakana": "katakana",
+                "root_field_group.katakana.placeholder": "10 or less multi-byte katakana",
+                "root_field_group.description": "description",
+                "root_field_group.description.placeholder": "30 or less characters",
+                "root_field_group.isin": "isin",
+                "root_field_group.isin.placeholder": "12 single-byte",
+                "root_field_group.houjinno": "houjinno",
+                "root_field_group.houjinno.placeholder": "13 single-byte numeric",
+                "root_field_group.rank": "rank",
+                "root_field_group.custclass1": "custclass1",
+                "root_field_group.custclass2": "custclass2",
+                "root_field_group.confirm": "confirm"
+              }
+            },
+            "thanks": {
+              "name": "thanks",
+              "fl": {
+                "root_field_group.awaggoblank": "Back"
+              }
+            }
+          }
+        },
+        "login": {
+          "name": "Login",
+          "description": "",
+          "sc": {
+            "login": {
+              "name": "Login",
+              "fl": {
+
+              }
+            }
+          }
+        },
+        "maintenance": {
+          "name": "maintenance",
+          "description": "Includes sample implementations for list display through search, detailed view of each data entry, and file download/upload functionality.",
+          "sc": {
+            "attachments": {
+              "name": "attachments",
+              "fl": {
+                "_group0._name": "customer info",
+                "_group0.customerid": "customerid",
+                "_group0.nameen": "name(English)",
+                "_group0.name": "name",
+                "_group0.awaggoback": "Back",
+                "list._name": "list",
+                "list.contenttype": "contentType",
+                "list.version": "version",
+                "list.comment": "comment",
+                "list.preview": "preview",
+                "list.filename": "filename",
+                "list.delete": "delete",
+                "list.listdownload": "listDownload",
+                "_group2._name": "add",
+                "_group2.comment": "comment",
+                "_group2.comment.placeholder": "512 or less characters",
+                "_group2.attach": "attach",
+                "_group2.attach.tooltip": "Please select the file to upload. You can preview it on the screen before updating.",
+                "_group2.preview": "preview",
+                "_group2.preview.tooltip": "Check this preview and if there are no problems, continue the update process.",
+                "_group2.commentext": "commentExt",
+                "_group2.commentext.placeholder": "512 or less characters",
+                "_group2.attachext": "attachExt",
+                "_group2.previewext": "previewExt",
+                "_group2.addattach": "addAttach",
+                "_group2.confirmupload": "ConfirmUpload"
+              }
+            },
+            "attachmentsupload": {
+              "name": "attachmentsupload",
+              "fl": {
+                "files._name": "list",
+                "files.name": "filename",
+                "files.type": "contentType",
+                "files.comment": "comment",
+                "files.preview": "preview",
+                "files.delete": "Delete",
+                "files.awaggoback": "Back",
+                "files.addattach": "addAttach"
+              }
+            },
+            "confirm": {
+              "name": "confirm",
+              "fl": {
+                "root_field_group.customerid": "customerid",
+                "root_field_group.nameen": "name(English)",
+                "root_field_group.name": "name",
+                "root_field_group.inchargeid": "inchargeid",
+                "root_field_group.registereddate": "registereddate",
+                "root_field_group.hiragana": "hiragana",
+                "root_field_group.katakana": "katakana",
+                "root_field_group.description": "description",
+                "root_field_group.isin": "isin",
+                "root_field_group.houjinno": "houjinno",
+                "root_field_group.rank": "rank",
+                "root_field_group.custclass1": "custclass1",
+                "root_field_group.custclass2": "custclass2",
+                "root_field_group.checkbox": "checkbox",
+                "root_field_group.awaggoback": "Back",
+                "root_field_group.update": "update"
+              }
+            },
+            "search": {
+              "name": "search",
+              "fl": {
+                "_group0._name": "search options",
+                "_group0.customerid": "customerid",
+                "_group0.customerid.placeholder": "8 single-byte numeric",
+                "_group0.customerid.tooltip": "Customer numbers are given in a serial number of 8 digits in the order registered in the system.",
+                "_group0.nameen": "name(English)",
+                "_group0.nameen.placeholder": "2 or more, 30 or less single-byte",
+                "_group0.nameen.tooltip": "If there is an English notation of the customer name, specify it in alphabet.",
+                "_group0.name": "name",
+                "_group0.name.placeholder": "2 or more, 10 or less multi-byte",
+                "_group0.inchargeid": "inchargeid",
+                "_group0.inchargeid.placeholder": "8 single-byte",
+                "_group0.registereddate": "registereddate",
+                "_group0.registereddate.placeholder": "yyyy-mm-dd",
+                "_group0.hiragana": "hiragana",
+                "_group0.hiragana.placeholder": "10 or less hiragana",
+                "_group0.katakana": "katakana",
+                "_group0.katakana.placeholder": "10 or less multi-byte katakana",
+                "_group0.description": "description",
+                "_group0.description.placeholder": "30 or less characters",
+                "_group0.rank": "rank",
+                "_group0.custclass1": "custclass1",
+                "_group0.checkbox": "checkbox",
+                "_group0.awagsearch": "search",
+                "list._name": "list",
+                "list.customerid": "customerid",
+                "list.nameen": "name(English)",
+                "list.nameen.table_header_group": "name",
+                "list.name": "name",
+                "list.name.table_header_group": "name",
+                "list.inchargeid": "inchargeid",
+                "list.inchargeid.table_header_group": "incharge",
+                "list.registereddate": "registereddate",
+                "list.hiragana": "hiragana",
+                "list.hiragana.table_header_group": "name",
+                "list.katakana": "katakana",
+                "list.katakana.table_header_group": "name",
+                "list.description": "description",
+                "list.isin": "isin",
+                "list.houjinno": "houjinno",
+                "list.rank": "rank",
+                "list.custclass1": "custclass1",
+                "list.checkbox": "checkbox",
+                "list.awagselect": "awagSelect",
+                "list.view": "view",
+                "list.update": "update"
+              }
+            },
+            "thanks": {
+              "name": "thanks",
+              "fl": {
+                "root_field_group.awaggoback": "Back"
+              }
+            },
+            "update": {
+              "name": "update",
+              "fl": {
+                "root_field_group.customerid": "customerid",
+                "root_field_group.customerid.placeholder": "8 single-byte numeric",
+                "root_field_group.nameen": "name(English)",
+                "root_field_group.nameen.placeholder": "2 or more, 30 or less single-byte",
+                "root_field_group.name": "name",
+                "root_field_group.name.placeholder": "2 or more, 10 or less multi-byte",
+                "root_field_group.inchargeid": "inchargeid",
+                "root_field_group.inchargeid.placeholder": "8 single-byte",
+                "root_field_group.registereddate": "registereddate",
+                "root_field_group.registereddate.placeholder": "yyyy-mm-dd",
+                "root_field_group.hiragana": "hiragana",
+                "root_field_group.hiragana.placeholder": "10 or less hiragana",
+                "root_field_group.katakana": "katakana",
+                "root_field_group.katakana.placeholder": "10 or less multi-byte katakana",
+                "root_field_group.description": "description",
+                "root_field_group.description.placeholder": "30 or less characters",
+                "root_field_group.isin": "isin",
+                "root_field_group.isin.placeholder": "12 single-byte",
+                "root_field_group.houjinno": "houjinno",
+                "root_field_group.houjinno.placeholder": "13 single-byte numeric",
+                "root_field_group.rank": "rank",
+                "root_field_group.custclass1": "custclass1",
+                "root_field_group.custclass2": "custclass2",
+                "root_field_group.checkbox": "checkbox",
+                "root_field_group.awaggoback": "Back",
+                "root_field_group.confirm": "confirm"
+              }
+            },
+            "view": {
+              "name": "view",
+              "fl": {
+                "root_field_group.customerid": "customerid",
+                "root_field_group.nameen": "name(English)",
+                "root_field_group.name": "name",
+                "root_field_group.inchargeid": "inchargeid",
+                "root_field_group.registereddate": "registereddate",
+                "root_field_group.hiragana": "hiragana",
+                "root_field_group.katakana": "katakana",
+                "root_field_group.description": "description",
+                "root_field_group.isin": "isin",
+                "root_field_group.houjinno": "houjinno",
+                "root_field_group.rank": "rank",
+                "root_field_group.custclass1": "custclass1",
+                "root_field_group.custclass2": "custclass2",
+                "root_field_group.checkbox": "checkbox",
+                "root_field_group.attachments": "attachments",
+                "root_field_group.awaggoback": "Back"
+              }
+            }
+          }
+        },
+		"menu_holder": {
+		  "name": "Menu Hierarchy Display"
+		},
+		"menu1": {
+		  "name": "Menu1",
+		  "description": "",
+		  "sc": {
+		    "menu1": {
+		      "name": "Menu1",
+		      "fl": {
+		        "_group0.message": "This is a sample screen of the menu hierarchy display."
+		      }
+		    }
+		  }
+		},
+		"menu2": {
+		  "name": "Menu2",
+		  "description": "",
+		  "sc": {
+		    "menu2": {
+		      "name": "Menu2",
+		      "fl": {
+		        "_group0.message": "This is a sample screen of the menu hierarchy display."
+		      }
+		    }
+		  }
+		},
+		"menu3_holder": {
+		  "name": "Menu3"
+		},
+		"menu3-1": {
+		  "name": "Menu3-1",
+		  "description": "",
+		  "sc": {
+		    "menu3-1": {
+		      "name": "Menu3-1",
+		      "fl": {
+		        "_group0.message": "This is a sample screen of the menu hierarchy display."
+		      }
+		    }
+		  }
+		},
+		"menu3-2": {
+		  "name": "Menu3-2",
+		  "description": "",
+		  "sc": {
+		    "menu3-2": {
+		      "name": "Menu3-2",
+		      "fl": {
+		        "_group0.message": "This is a sample screen of the menu hierarchy display."
+		      }
+		    }
+		  }
+		},
+		"menu4": {
+		  "name": "Menu4",
+		  "description": "",
+		  "sc": {
+		    "menu4": {
+		      "name": "Menu4",
+		      "fl": {
+		        "_group0.message": "This is a sample screen of the menu hierarchy display."
+		      }
+		    }
+		  }
+		},
+        "messages": {
+          "name": "messages",
+          "description": "",
+          "sc": {
+            "complete": {
+              "name": "thanks",
+              "fl": {
+                "root_field_group.awaggoblank": "Back"
+              }
+            },
+            "create": {
+              "name": "input",
+              "fl": {
+                "root_field_group.messageid": "messageid",
+                "root_field_group.messageid.placeholder": "1 or more, 8 or less single-byte",
+                "root_field_group.messagebody": "messagebody",
+                "root_field_group.messagebody.placeholder": "1 or more, 1024 or less multi-byte",
+                "root_field_group.valid": "valid",
+                "root_field_group.awaggoback": "Back",
+                "root_field_group.confirm": "Confirm"
+              }
+            },
+            "createconfirm": {
+              "name": "confirm",
+              "fl": {
+                "root_field_group.messageid": "messageid",
+                "root_field_group.messagebody": "messagebody",
+                "root_field_group.valid": "valid",
+                "root_field_group.awaggoback": "Back",
+                "root_field_group.execute": "Input"
+              }
+            },
+            "deleteconfirm": {
+              "name": "deleteconfirm",
+              "fl": {
+                "root_field_group.messageid": "messageid",
+                "root_field_group.messagebody": "messagebody",
+                "root_field_group.valid": "valid",
+                "root_field_group.awaggoback": "Back",
+                "root_field_group.execute": "Delete"
+              }
+            },
+            "search": {
+              "name": "search",
+              "fl": {
+                "parameter._name": "search condition",
+                "parameter.messageid": "messageid",
+                "parameter.messageid.placeholder": "1 or more, 8 or less single-byte",
+                "parameter.messagebody": "messagebody",
+                "parameter.messagebody.placeholder": "1 or more, 1024 or less multi-byte",
+                "parameter.valid": "valid",
+                "parameter.valid.placeholder": "true or false",
+                "parameter.awagsearch": "Search",
+                "list._name": "result",
+                "list.messageid": "messageid",
+                "list.messagebody": "messagebody",
+                "list.valid": "valid",
+                "list.awagselect": "select",
+                "list.view": "Detail",
+                "list.update": "Update",
+                "list.delete": "Delete",
+                "list.awaggoblank": "Add",
+                "list.awagcsvdownload": "CSV"
+              }
+            },
+            "update": {
+              "name": "update",
+              "fl": {
+                "root_field_group.messageid": "messageid",
+                "root_field_group.messagebody": "messagebody",
+                "root_field_group.messagebody.placeholder": "1 or more, 1024 or less multi-byte",
+                "root_field_group.valid": "valid",
+                "root_field_group.awaggoback": "Back",
+                "root_field_group.confirm": "Confirm"
+              }
+            },
+            "updateconfirm": {
+              "name": "updateconfirm",
+              "fl": {
+                "root_field_group.messageid": "messageid",
+                "root_field_group.messagebody": "messagebody",
+                "root_field_group.valid": "valid",
+                "root_field_group.awaggoback": "Back",
+                "root_field_group.execute": "Update"
+              }
+            },
+            "view": {
+              "name": "detail",
+              "fl": {
+                "root_field_group.messageid": "messageid",
+                "root_field_group.messagebody": "messagebody",
+                "root_field_group.valid": "valid",
+                "root_field_group.awaggoback": "Back"
+              }
+            }
+          }
+        },
+        "role": {
+          "name": "role",
+          "description": "",
+          "sc": {
+            "complete": {
+              "name": "thanks",
+              "fl": {
+                "root_field_group.awaggoblank": "Back"
+              }
+            },
+            "create": {
+              "name": "input",
+              "fl": {
+                "root_field_group.role": "role",
+                "root_field_group.role.placeholder": "",
+                "root_field_group.lang": "language",
+                "root_field_group.lang.placeholder": "1 or more, 5 or less single-byte",
+                "root_field_group.rolename": "rolename",
+                "root_field_group.rolename.placeholder": "",
+                "root_field_group.awaggoback": "Back",
+                "root_field_group.confirm": "Confirm"
+              }
+            },
+            "createconfirm": {
+              "name": "confirm",
+              "fl": {
+                "root_field_group.role": "role",
+                "root_field_group.lang": "language",
+                "root_field_group.rolename": "rolename",
+                "root_field_group.awaggoback": "Back",
+                "root_field_group.execute": "Input"
+              }
+            },
+            "deleteconfirm": {
+              "name": "deleteconfirm",
+              "fl": {
+                "root_field_group.role": "role",
+                "root_field_group.lang": "language",
+                "root_field_group.rolename": "rolename",
+                "root_field_group.awaggoback": "Back",
+                "root_field_group.execute": "Delete"
+              }
+            },
+            "search": {
+              "name": "search",
+              "fl": {
+                "parameter._name": "search condition",
+                "parameter.role": "role",
+                "parameter.role.placeholder": "",
+                "parameter.lang": "language",
+                "parameter.lang.placeholder": "1 or more, 5 or less single-byte",
+                "parameter.rolename": "rolename",
+                "parameter.rolename.placeholder": "",
+                "parameter.awagsearch": "Search",
+                "list._name": "search result",
+                "list.role": "role",
+                "list.lang": "language",
+                "list.rolename": "rolename",
+                "list.awagselect": "Select",
+                "list.view": "View",
+                "list.update": "Update",
+                "list.delete": "Delete",
+                "list.awaggoblank": "Add",
+                "list.awagcsvdownload": "CSV"
+              }
+            },
+            "update": {
+              "name": "update",
+              "fl": {
+                "root_field_group.role": "role",
+                "root_field_group.lang": "language",
+                "root_field_group.lang.placeholder": "1 or more, 5 or less single-byte",
+                "root_field_group.rolename": "rolename",
+                "root_field_group.rolename.placeholder": "",
+                "root_field_group.awaggoback": "Back",
+                "root_field_group.confirm": "Confirm"
+              }
+            },
+            "updateconfirm": {
+              "name": "updateconfirm",
+              "fl": {
+                "root_field_group.role": "role",
+                "root_field_group.lang": "language",
+                "root_field_group.rolename": "rolename",
+                "root_field_group.awaggoback": "Back",
+                "root_field_group.execute": "Update"
+              }
+            },
+            "view": {
+              "name": "detail",
+              "fl": {
+                "root_field_group.role": "role",
+                "root_field_group.lang": "language",
+                "root_field_group.rolename": "rolename",
+                "root_field_group.awaggoback": "Back"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

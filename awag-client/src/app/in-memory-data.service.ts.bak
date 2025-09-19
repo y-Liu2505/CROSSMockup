@@ -1,0 +1,330 @@
+import { InMemoryDbService } from 'angular-in-memory-web-api';
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root',
+})
+export class InMemoryDataService implements InMemoryDbService {
+  createDb() {
+
+    let users = [];
+    let lands = [];
+    let i: number;
+    for (i = 1; i < 20; i++) {
+      const user: { [key: string]: any } = {};
+      user['detailno'] = '00' + i;
+      user['customerno'] = '123456789000' + Math.floor(i/10) + i%10;
+      user['namekana'] = 'ｶｽﾄﾏ' + i;
+      user['gender'] = '男';
+      user['birthdayjp'] = '平成7-01-' + Math.floor(i/10) + i%10;;
+      user['contract'] = '1234567890000' + Math.floor(i/10) + i%10;;
+      user['namekanji'] = '顧客' + i;
+      user['workplace'] = '秋田県北秋田郡上小阿仁村大字沖田面字小蒲野下タ川原 シャルマンフジビルト・モアー住之江公園駅前アーバンヴィレッジ 305号室事務所' + i;
+      user['worktel'] =  '050-000-00' + Math.floor(i/10) + i%10;;
+      user['homecode'] = '100-00' + Math.floor(i/10) + i%10;;
+      user['homeadd'] = '秋田県北秋田郡上小阿仁村大字沖田面字小蒲野下タ川原 シャルマンフジビルト・モアー住之江公園駅前アーバンヴィレッジ 305号室' + i;
+      user['hometel'] = '060-000-00' + Math.floor(i/10) + i%10;;
+      user['phone'] = '090-0000-00' + Math.floor(i/10) + i%10;;
+      user['birthdaywest'] = '1995-01-' + Math.floor(i/10) + i%10;;
+      users.push(user);
+    }
+
+    for (i = 1; i < 10; i++) {
+      const land: { [key: string]: any } = {};
+      land['department'] = '北海道';
+      land['branch'] = '旭川' + i;
+      land['name'] = '旭' + i;
+      land['code'] = '171' + i;
+      lands.push(land);
+    }
+    // console.log('create db:', lands);
+
+    for (i = 1; i < 10; i++) {
+      const land: { [key: string]: any } = {};
+      land['department'] = '北海道';
+      land['branch'] = '旭川' + i;
+      land['name'] = '旭' + i;
+      land['code'] = '171' + i;
+      lands.push(land);
+    }
+    // console.log('create db:', lands);
+
+    let contractnos = [];
+    for (i = 1; i < 10; i++) {
+      const contractno: { [key: string]: any } = {};
+      contractno['customerno'] = '1234567890000' + i;
+      contractno['type'] = '本人'
+      contractno['kadogen'] = '10' +  i;
+      contractno['kadoka'] =  '10' +  i;
+      contractno['wapugen'] =  '10' +  i;
+      contractno['wabuka'] =  '10' +  i;
+      contractno['shorogen'] =  '100000000' + i;
+      contractno['shoroka'] =  '100000000' +  i;
+      contractno['yoshin'] =  '100000000' +  i;
+      contractnos.push(contractno);
+    }
+    for (i = 1; i < 10; i++) {
+      const contractno: { [key: string]: any } = {};
+      contractno['customerno'] = '1234567890000' + i;
+      contractno['type'] = 'その他'
+      contractno['kadogen'] = '20' +  i;
+      contractno['kadoka'] =  '20' +  i;
+      contractno['wapugen'] =  '20' +  i;
+      contractno['wabuka'] =  '20' +  i;
+      contractno['shorogen'] =  '200000000' + i;
+      contractno['shoroka'] =  '200000000' +  i;
+      contractno['yoshin'] =  '200000000' +  i;
+      contractnos.push(contractno);
+    }
+
+    let cards = [];
+    for (i = 1; i < 10; i++) {
+      const card: { [key: string]: any } = {};
+      card['customerno'] = '12345678900001';
+      card['ItemNo'] = '00' + i;
+      card['commodity'] = 'C0' + i;
+      card['Facts'] = '本人';
+      card['MembershipNo']= '1234-5678-9000-000' + i;
+      card['tradename']= 'トヨタ自動車' + i;
+      card['term']= '01/0' + i;
+      card['DateofEnrollment']= '25/05/0' + i;
+      card['Dateofpayment']= '0' + i + '日';
+      card['link']= '00' + i;
+      card['Pending'] = i;
+      card['settlement']= i;
+      card['Beforerevolving']= '00' + i;
+      card['direction']= '残高';
+      card['CL']= '残高';
+      card['everymonth']= '10,00' + i;
+      card['Senchi']= '10,00' + i;
+      card['Envoys']= 'マイツキ';
+      card['attribution']= 'C.ギフ';
+      card['solicitation']= '販売店取次';
+      card['postpone']= '延滞中';
+      card['solution']= '25/01/0' + i;
+      card['form']= '任意解約';
+      card['mainContract']= '9999-9999-9990' + i;
+      card['OwnerSociety']= '9999-9999-9990' + i;
+      card['continue']= '子';
+      card['raw']= 'S07/01/0' + i;
+      card['gyakuno']= '9999-9999-9990' + i;
+      card['with']= '00' + i;
+      card['pLink']= '00' + i;
+      cards.push(card);
+    }
+    let capu1s = [];
+    for (i = 1; i < 10; i++) {
+      const capu1: { [key: string]: any } = {};
+      capu1['customerno'] = '12345678900001';
+      capu1['ItemNo']='00' + i;
+      capu1['commodity']='証書';
+      capu1['Facts']='本人';
+      capu1['ContractNo']='1234-5678-9000-000' + i;
+      capu1['tradename']='教育ローン' + i;
+      capu1['final']='25/0'+i;
+      capu1['DateofAcceptance']='25/05/0' + i;
+      capu1['Dateofpayment']='0' + i + '日';
+      capu1['firsttime']='25/0'+i;
+      capu1['Acceptance']='10,00' + i;
+      capu1['Senchi']='10,00' + i;
+      capu1['Envoys']='マイツキ';
+      capu1['sale']='ﾅｺﾞﾔﾄﾖﾍﾟﾄ';
+      capu1['Models']='ＳＶＰ新車';
+      capu1['torokuno']='10'+i;
+      capu1['postpone']='延滞中';
+      capu1['end']='25/01/0'+i;
+      capu1['form']='早期完済';
+      capu1['mainContract']='123-1234-1234' + i;
+      capu1['gyoumei']='9999-9999-9990' + i;
+      capu1['continue1']='配偶';
+      capu1['raw1']='S07/01/0' + i;
+      capu1['RetentionB']='123456789' + i;
+      capu1['name']='ﾄﾖﾀｼﾞﾄﾞｳｼｬ'+i;
+      capu1['continue2']='代表';
+      capu1['raw2']='S07/01/0' + i;
+      capu1s.push(capu1);
+    }
+    let capu2s = [];
+    for (i = 1; i < 10; i++) {
+      const capu2: { [key: string]: any } = {};
+      capu2['customerno'] = '1234567890000' + i;
+      capu2['ItemNo']='20'+i;
+      capu2['commodity']='C0' + i;
+      capu2['Facts']='本人';
+      capu2['ContractNo']='1234-5678-9000-000' + i;
+      capu2['tradename']='トヨタ自動車' + i;
+      capu2['DateofAcceptance']='25/05/0' + i;
+      capu2s.push(capu2);
+    }
+
+    let seisos = [];
+    for (i = 1; i < 10; i++) {
+      const seiso: { [key: string]: any } = {};
+      seiso['customerno']='1234567890000' + i;
+      seiso['ItemNo']='30'+i;
+      seiso['commodity']='C0' + i;
+      seiso['Facts']='本人';
+      seiso['ContractNo']='1234-5678-9000-000' + i;
+      seiso['tradename']='トヨタ自動車' + i;
+      seiso['final']='25/0'+i;
+      seiso['DateofAcceptance']='25/05/0' + i;
+      seiso['Dateofpayment']='0' + i + '日';
+      seiso['firsttime']='25/0'+i;
+      seisos.push(seiso);
+    }
+  let yoshins = [];
+    for (i = 1; i < 10; i++) {
+    const yoshin: { [key: string]: any } = {};
+    yoshin['customerno']='1234567890000'+i;
+    yoshin['ItemNo']='40'+i;
+    yoshin['commodity']='C申込';
+    yoshin['Facts']='世帯主';
+    yoshin['ReceptionNo']='12345678901234'+i;//
+    yoshin['Dateofreception']='25/05/0' + i;
+    yoshin['Acceptance']= '有';
+    yoshin['numberoftimes']= i; //
+    yoshin['principal']='10,00' + i;
+    yoshin['Senchi']='10,00' + i;
+    yoshin['sale']='ﾅｺﾞﾔﾄﾖﾍﾟﾄ';
+    yoshin['result']='カ：取下';
+    yoshin['Even']='25/05/0' + i;
+    yoshin['form']='判定中';
+    yoshin['PrincipalOccasion']='1234-5678-9000-000' + i;
+    yoshin['continue']='子';
+    yoshins.push(yoshin);
+  }
+
+  let contacthistories = [];
+  for (i = 1; i < 10; i++) {
+      const contacthistory: { [key: string]: any } = {};
+      contacthistory['customerno']='123-4567-00000';
+      contacthistory['regDate'] = '2025-8-5';
+      contacthistory['chanel'] = 'Web IN';
+      contacthistory['customerType'] = '本人';
+      contacthistory['product'] = 'TS CUBICカード';
+      contacthistory['serviceContent'] = 'ポイント';
+      contacthistory['serviceDetail'] = '交換';
+      contacthistory['processing'] = '受付';
+      contacthistory['pic'] = 'TS';
+      contacthistory['contactType'] = '通常';
+      contacthistory['picGroup'] = 'グループ' + i;
+      contacthistory['comment'] = 'テキストテキストテキストテキストテキストテキストテキスト \nテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト \nテキストテキストテキストテキストテキストテキストテキスト'
+      contacthistories.push(contacthistory);
+    }
+    const contacthistory: { [key: string]: any } = {};
+    contacthistory['customerno']='123-4567-00000';
+    contacthistory['regDate'] = '2025-7-5';
+    contacthistory['chanel'] = '電話受電';
+    contacthistory['customerType'] = '本人';
+    contacthistory['product'] = 'TS CUBICカード';
+    contacthistory['serviceContent'] = 'ポイント';
+    contacthistory['serviceDetail'] = '交換';
+    contacthistory['processing'] = '確認';
+    contacthistory['pic'] = 'TS';
+    contacthistory['contactType'] = '意見・要望';
+    contacthistory['picGroup'] = 'グループX';
+    contacthistory['comment'] = '一番長い行テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト'
+    contacthistories.push(contacthistory);
+
+    let customerCharacters = [];
+    const customerCharacter: { [key: string]: any } = {};
+    // customerCharacter['hearing_updateDate']='2025/08/10'
+    // customerCharacter['hearingValue']=1
+    // customerCharacter['specialRes_updateDate']='2025/08/10'
+    // customerCharacter['specialResValue']=1
+    // customerCharacter['phoneCallCancel_updateDate']='2025/08/10'
+    // customerCharacter['phoneCallCancelValue']=1
+    // customerCharacter['mailCancel_updateDate']='2025/08/10'
+    // customerCharacter['mailCancelValue']=1
+    // customerCharacter['noWebGuide_updateDate']='10/08/10'
+    // customerCharacter['noWebGuideValue']=1
+    // customerCharacter['resMail_updateDate']='2025/08/10'
+    // customerCharacter['resMailValue']=1
+    customerCharacter['hearing_updateDate']=''
+    customerCharacter['hearingValue']=''
+    customerCharacter['specialRes_updateDate']=''
+    customerCharacter['specialResValue']=''
+    customerCharacter['phoneCallCancel_updateDate']=''
+    customerCharacter['phoneCallCancelValue']=''
+    customerCharacter['mailCancel_updateDate']=''
+    customerCharacter['mailCancelValue']=''
+    customerCharacter['noWebGuide_updateDate']=''
+    customerCharacter['noWebGuideValue']=''
+    customerCharacter['resMail_updateDate']=''
+    customerCharacter['resMailValue']=''
+    customerCharacters.push(customerCharacter);
+
+    const creditCodes: { [key: string]: any } = {};
+     
+      creditCodes['customerCreditCode'] = '料飲異常';
+      creditCodes['customerStatusCodes'] = '郵便不着';
+      creditCodes['customerAttributeCodes'] = 'VP政治';
+      creditCodes['consignmentStatus'] = 'ＭＵ委託中';
+
+      const creditCodeCardInfos = [];
+      for (i = 0; i < 10; i++) {
+        const creditCode: { [key: string]: any } = {};
+        creditCode['representativeMember'] = '4685-1799-9204-000' + i;
+        creditCode['application_PartyClassification'] = '本人';
+        creditCode['application_ProductName'] = 'トヨタ セV00' + i;
+        creditCode['application_ExpirationDate'] = '2026/01';
+        creditCode['application_Ownershipstore'] = '12345678901234';
+        creditCode['representativeMemberName'] = 'あいうえおかきくけこさしすせそなにぬねの';
+        creditCode['negotiationResults'] = '502';
+        creditCode['beCarefulSta'] = 1;
+        creditCode['overdue'] = 1
+        creditCode['overdueRating'] = 1;
+        creditCode['inadequateAccount'] = 0;
+        creditCode['mailNotArrive'] = i;        
+        creditCode['noReason'] = i;
+        let j;
+        let contractInfos = [];
+        for (j = 0; j < 6; j++) {
+          const contractInfo: { [key: string]: any } = {};
+          contractInfo['membershipNumber'] = '4685-1799-9204-000' + j * 2;
+          contractInfo['contractorName'] = 'あいうえおかきくけこ';
+          contractInfo['relationship'] = '本人';
+          contractInfo['customerNumber'] = '001-7802-83783';
+          if (j < 3) {
+            contractInfo['cancellationReason'] = '';
+          } else {
+            contractInfo['cancellationReason'] = '再発行済';
+          }
+          contractInfo['updateStop'] = 4;
+          contractInfo['accidentReason'] = 1;
+          contractInfo['cardValid'] = j;
+          if (j == 0) {
+            contractInfo['abuseAuthorization'] = '1';
+          } 
+          if (j == 1) {
+            contractInfo['abuseAuthorization'] = '2';
+          } 
+          if (j == 2) {
+            contractInfo['abuseAuthorization'] = 'A';
+          } 
+          if (j == 3) {
+            contractInfo['abuseAuthorization'] = 'W';
+          } 
+          if (j == 4) {
+            contractInfo['abuseAuthorization'] = 'E';
+          } 
+          contractInfo['reissue'] = 2;
+          contractInfo['cardCollection'] = 1;
+          contractInfos.push(contractInfo);
+        }
+
+        creditCode['contractInfos'] = contractInfos;
+
+        creditCodeCardInfos.push(creditCode);
+
+        creditCodes['creditCodeCardInfos'] = creditCodeCardInfos;
+      }
+      
+     
+
+
+    
+    // console.log('create contacthistory db:', contacthistories);
+    return { users,lands,contractnos,cards,capu1s,capu2s,seisos,yoshins,contacthistories,customerCharacters,creditCodes };
+  }
+}

@@ -1,0 +1,263 @@
+<div class="modal-overlay">
+    <!-- liu-modify 0529 -->
+    <!-- cdkDragRootElement は該当するDialogをドラッグできるにする -->
+    <!-- <div 
+      class="modal-container resizers" 
+      cdkDrag 
+      cdkDragRootElement=".modal-container"
+      #modalContainer > -->
+    <div class="modal-container resizers" #modalContainer >
+      <div cdkDragHandle class="modal-header">
+        <!-- <button class="close-button" (click)="close()">×</button> -->
+        <span class="modal-title">契約一覧</span>
+      </div>
+      <div class="modal-body">
+        <div class="searchConditons">
+          <div class="inputArea">
+            <div class="row">
+              <div class="conditionBlock">
+                <label class="form-label" for="_group0-affiliationno" matTooltip="フォント５番・文字色１番" matTooltipPosition="above">顧客番号</label>
+                <div class="input-group awag-validity">
+                  <input class="form-control awag-validity affiliationno" id="_group0-affiliationno" name="affiliationno" type="text" placeholder="" pattern="[0-9a-zA-Z\-]{0,24}" awagText />
+                </div>
+                <span class="explanation">ラベル：フォント５番・文字色１番</span>
+              </div>
+              <div class="conditionBlock">
+                <label class="form-label" for="_group0-affiliationno">顧客番号</label>
+                <div class="input-group awag-validity">
+                  <input class="form-control awag-validity affiliationno" id="_group0-affiliationno" name="affiliationno" type="text" placeholder="" pattern="[0-9a-zA-Z\-]{0,24}" awagText />
+                </div>
+                <span class="explanation">入力内容：フォント４番・文字色１番</span>
+              </div>
+              <div class="conditionBlock">
+                <label class="form-label" for="_group0-affiliationno">顧客番号</label>
+                <div class="input-group awag-validity">
+                  <input class="form-control awag-validity affiliationno" id="_group0-affiliationno" name="affiliationno" type="text" placeholder="" pattern="[0-9a-zA-Z\-]{0,24}" awagText />
+                </div>
+              </div>
+              <div class="conditionBlock">
+                <label class="form-label" for="_group0-affiliationno">顧客番号</label>
+                <div class="input-group awag-validity">
+                  <input class="form-control awag-validity affiliationno" id="_group0-affiliationno" name="affiliationno" type="text" placeholder="" pattern="[0-9a-zA-Z\-]{0,24}" awagText />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="conditionBlock">
+                <label class="form-label" for="_group0-affiliationno">顧客番号</label>
+                <div class="input-group awag-validity">
+                  <input class="form-control awag-validity affiliationno" id="_group0-affiliationno" name="affiliationno" type="text" placeholder="" pattern="[0-9a-zA-Z\-]{0,24}" awagText />
+                </div>
+              </div>
+              <div class="conditionBlock">
+                <label class="form-label" for="_group0-affiliationno">顧客番号</label>
+                <div class="input-group awag-validity">
+                  <input class="form-control awag-validity affiliationno" id="_group0-affiliationno" name="affiliationno" type="text" placeholder="" pattern="[0-9a-zA-Z\-]{0,24}" awagText />
+                </div>
+              </div>
+              <div class="conditionBlock">
+                <label class="form-label" for="_group0-affiliationno">顧客番号</label>
+                <div class="input-group awag-validity">
+                  <input class="form-control awag-validity affiliationno" id="_group0-affiliationno" name="affiliationno" type="text" placeholder="" pattern="[0-9a-zA-Z\-]{0,24}" awagText />
+                </div>
+              </div>
+              <div class="conditionBlock">
+                <label class="form-label" for="_group0-affiliationno">顧客番号</label>
+                <div class="input-group awag-validity">
+                  <input class="form-control awag-validity affiliationno" id="_group0-affiliationno" name="affiliationno" type="text" placeholder="" pattern="[0-9a-zA-Z\-]{0,24}" awagText />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="buttonArea">
+              <button class="search-button import-button">検索</button>
+          </div>
+        </div>
+        <div class="table-header">
+          <h3 class="result-title">カード</h3>
+        </div>
+        <div>
+          <div>
+            <table class="history-table">
+              <thead>
+                <tr>
+                  <th>明細番号</th>
+                  <th>商品</th>
+                  <th>当事</th>
+                  <th>会員No</th>
+                  <th>商品名</th>
+                  <th>期限</th>
+                  <th>入会日</th>
+                  <th>支払日</th>
+                  <th>ﾘﾝｸ</th>
+                  <th>未決</th>
+                  <th>決済</th>
+                  <th>リボ前</th>
+                  <th>方</th>
+                  <th>CL方</th>
+                  <th>毎月</th>
+                  <th>千単</th>
+                  <th>使バ</th>
+                  <th>帰属</th>
+                  <th>勧誘</th>
+                  <th>延</th>
+                  <th>解</th>
+                  <th>状</th>
+                  <th>主契-家No-法No</th>
+                  <th>会名主</th>
+                  <th>続</th>
+                  <th>生</th>
+                  <th>顧No</th>
+                  <th>付</th>
+                  <th>Pﾘﾝｸ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="dialogCtrls" [class.selected]="0" (click)="onRowClick(0)">
+                  <td>001</td>
+                  <td>C01</td>
+                  <td>本人</td>
+                  <td>1234-5678-9000-0001</td>
+                  <td>トヨタ自動車1</td>
+                  <td>01/01</td>
+                  <td>25/05/01</td>
+                  <td>01日</td>
+                  <td>001</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>001</td>
+                  <td>残高</td>
+                  <td>残高</td>
+                  <td>10,001</td>
+                  <td>10,001</td>
+                  <td>マイツキ</td>
+                  <td>C.ギフ</td>
+                  <td>販売店取次</td>
+                  <td>延滞中</td>
+                  <td>25/01/01</td>
+                  <td>任意解約</td>
+                  <td>9999-9999-99901</td>
+                  <td>9999-9999-99901</td>
+                  <td>子</td>
+                  <td>S07/01/01</td>
+                  <td>9999-9999-99901</td>
+                  <td>001</td>
+                  <td>001</td>
+                </tr>
+                <tr>
+                  <td>001</td>
+                  <td>C01</td>
+                  <td>本人</td>
+                  <td>1234-5678-9000-0001</td>
+                  <td>トヨタ自動車1</td>
+                  <td>01/01</td>
+                  <td>25/05/01</td>
+                  <td>01日</td>
+                  <td>001</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>001</td>
+                  <td>残高</td>
+                  <td>残高</td>
+                  <td>10,001</td>
+                  <td>10,001</td>
+                  <td>マイツキ</td>
+                  <td>C.ギフ</td>
+                  <td>販売店取次</td>
+                  <td>延滞中</td>
+                  <td>25/01/01</td>
+                  <td>任意解約</td>
+                  <td>9999-9999-99901</td>
+                  <td>9999-9999-99901</td>
+                  <td>子</td>
+                  <td>S07/01/01</td>
+                  <td>9999-9999-99901</td>
+                  <td>001</td>
+                  <td>001</td>
+                </tr>
+                <tr>
+                  <td>001</td>
+                  <td>C01</td>
+                  <td>本人</td>
+                  <td>1234-5678-9000-0001</td>
+                  <td>トヨタ自動車1</td>
+                  <td>01/01</td>
+                  <td>25/05/01</td>
+                  <td>01日</td>
+                  <td>001</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>001</td>
+                  <td>残高</td>
+                  <td>残高</td>
+                  <td>10,001</td>
+                  <td>10,001</td>
+                  <td>マイツキ</td>
+                  <td>C.ギフ</td>
+                  <td>販売店取次</td>
+                  <td>延滞中</td>
+                  <td>25/01/01</td>
+                  <td>任意解約</td>
+                  <td>9999-9999-99901</td>
+                  <td>9999-9999-99901</td>
+                  <td>子</td>
+                  <td>S07/01/01</td>
+                  <td>9999-9999-99901</td>
+                  <td>001</td>
+                  <td>001</td>
+                </tr>
+                <tr>
+                  <td>001</td>
+                  <td>C01</td>
+                  <td>本人</td>
+                  <td>1234-5678-9000-0001</td>
+                  <td>トヨタ自動車1</td>
+                  <td>01/01</td>
+                  <td>25/05/01</td>
+                  <td>01日</td>
+                  <td>001</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>001</td>
+                  <td>残高</td>
+                  <td>残高</td>
+                  <td>10,001</td>
+                  <td>10,001</td>
+                  <td>マイツキ</td>
+                  <td>C.ギフ</td>
+                  <td>販売店取次</td>
+                  <td>延滞中</td>
+                  <td>25/01/01</td>
+                  <td>任意解約</td>
+                  <td>9999-9999-99901</td>
+                  <td>9999-9999-99901</td>
+                  <td>子</td>
+                  <td>S07/01/01</td>
+                  <td>9999-9999-99901</td>
+                  <td>001</td>
+                  <td>001</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        
+  
+        <div class="executeBtns">
+          <div class="deleteBtn">
+            <button class="delete-button" (click)="delete()">削除</button>
+            <button class="clear-button" (click)="clear()">クリア</button>
+          </div>
+          <div class="cuBtn">
+            <button class="create-button import-button">登録</button>
+            <button class="update-button import-button">更新</button>
+            <button class="import-button">取込</button>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="close-button" (click)="close()">閉じる</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

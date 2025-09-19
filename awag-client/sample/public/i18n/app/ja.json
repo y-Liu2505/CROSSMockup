@@ -1,0 +1,39 @@
+{
+  "app": {
+    "label": {
+      "sc": {
+        "memo.placeholder": "テキストを記入してください。",
+        "memo.button.add": "メモ追加",
+        "memo.button.close": "閉じる"
+      }
+    }
+  },
+  "custom": {
+    "msg": {
+      "E003": "IBMで始まる登録名は禁止です。",
+      "E005": "社員情報が選択されていません",
+      "E006": "最終ページを表示してから追加ボタンを押下してください"
+    },
+    "prj": {
+      "uc": {
+        "inputcustomer": {
+          "sc": {
+            "confirm": {
+              "fl": {
+                "confirmmodal.body": "承認プロセスが開始されます。実行しますか？",
+                "confirmmodal.dismissbutton": "キャンセル",
+                "confirmmodal.closebutton": "実行"
+              }
+            },
+            "input" : {
+              "F1Label": "F1サンプル",
+              "F2Label": "F2サンプル",
+              "F3Label": "F3サンプル",
+              "F4Label": "F4サンプル、F5〜F12も同様にファンクションキー制御登録済み"
+            }
+          }
+        }
+      }
+    }
+  }
+}
