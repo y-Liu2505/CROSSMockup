@@ -738,9 +738,6 @@ export class MaintenanceSearchComponent extends AwagBaseComponent implements OnI
       this.awagContext.setVModel('maintenance_search', this.model);
       this.awagContext.setNextModel(this.awagSelectCustomLogic(this.model, index, item));
       this.listListCtrl.modelSelected = true;
-      this.awagContext.setVModel('maintenance_search', this.model);
-      this.awagContext.setNextModel(this.awagSelectCustomLogic(this.model, index, item));
-      this.listListCtrl.modelSelected = true;
       this.model.search['detailCustomerNo'] = item.customerno;
       this.model.search['detailNameKanji'] = item.namekanji;
       this.model.search['detailNameKana'] = item.namekana;
@@ -1112,7 +1109,7 @@ export class MaintenanceSearchComponent extends AwagBaseComponent implements OnI
             this.awagSelect(-1, null);
         } else {
             // クリックしていない場合選択する
-            this.listSelected = true;
+            this.listSelected = row;
             radioBtnCheck.checked = true;
             this.selectedRowIndex = index;
             this.awagSelect(index, row);
@@ -1484,9 +1481,7 @@ export class MaintenanceSearchComponent extends AwagBaseComponent implements OnI
     return model; 
   }
   onRowCheckOn(row: any, index: number): void {
-    // this.selectedRowIndex = index;
-    this.list7Selected = true;
-    // console.log (row, index);
+    this.selectedRowIndex = index;
   }
 
   selectedItems: any[] = [];
@@ -1495,16 +1490,11 @@ export class MaintenanceSearchComponent extends AwagBaseComponent implements OnI
     
   }
   toggleSelection(item: any, event: Event): void {
-    const isChecked = (event.target as HTMLInputElement).checked;
     const radioRow = event.target as HTMLInputElement;
-    const row = radioRow.closest('tr');
-
-    if (isChecked) {
-      row?.classList.add('tr.selected');
+    if (radioRow['checked']) {
       this.selectedItems.push(item);
     } else {
-      row?.classList.remove('tr.selected');
-      this.selectedItems = this.selectedItems.filter(i => i !== item);
+      this.selectedItems = this.selectedItems.filter(selectedItem => selectedItem !== item);
     }
   }
   closeMessage(msgCate: string) {

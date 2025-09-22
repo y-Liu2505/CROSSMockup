@@ -335,6 +335,33 @@ table {
     width: 16px;
     height: 16px;
     margin-right: 1px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+// 表内のコピーボタン表現制御
+// このコピーボタンの仕様を規定する
+.copy-btnTbl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px 1px;
+    border: none;
+    background-color: #25AEAF;
+    position: relative;
+}
+// 背景色とアイコン等を追加する
+.copy-btnTbl::after {
+    content: '';
+    display: inline-block;
+    background-color: #25AEAF;
+    background-image: url('../../../../node_modules/material-design-icons/content/1x_web/ic_content_paste_white_18dp.png');
+    background-size: contain;
+    width: 16px;
+    height: 10px;
+    margin-right: 1px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 // 見出し　Bold-16px-150%
