@@ -18,6 +18,8 @@ import { AppCommonService } from '../../common/app-common.service';
 import { AwagListController } from '../../awag/awag-listcontroller';
 import { AwagVisibilityService, AwagVisibilityConfig, AwagVisibilityState } from '../../awag/awag-visibility.service';
 import { ROLE_BASED_VISIBILITY } from './basicattributes-basicattributes-config';
+import { MatDialog } from "@angular/material/dialog";
+import { ContactHistoryComponent } from "../../maintenance/contact-history/contact-history.component";
 
 /**
  * @description
@@ -81,6 +83,7 @@ export class BasicattributesBasicattributesComponent extends AwagBaseComponent i
     protected appCommon: AppCommonService,
     protected translate: TranslateService,
     protected visibilityService: AwagVisibilityService,
+    protected dialog: MatDialog,
   ) {
     super(router, awagCommon, awagContext, awagLogger, awagAlert, awagLanguageSupport);
     this.awagContext.setScreenKey('basicattributes_basicattributes');
@@ -604,6 +607,8 @@ export class BasicattributesBasicattributesComponent extends AwagBaseComponent i
     // self screen event
     this.model = this.selectCustomLogic(this.model, index, item);
     this.awagAfterViewInit();
+    
+    this.dialog.open(ContactHistoryComponent, {});
   }
 
   /**

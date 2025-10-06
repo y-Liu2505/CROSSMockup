@@ -903,10 +903,12 @@ export class MaintenanceSearchComponent extends AwagBaseComponent implements OnI
    */
   openPopupWindow() {
     
-    let popupWidth, popupHeight, left, top;
-    popupHeight = 960;
-    popupWidth = 1440;
-    window.open('basicattributes', '_blank', `width=${popupWidth},height=${popupHeight},left=${left},top=${top},resizable=yes,scrollbars=yes`);
+    let popupWidth, popupHeight, left, bottom;
+    left = window.screen.width - 1220;
+    bottom = window.screen.height - 700;
+    popupHeight = 700;
+    popupWidth = 1220;
+    window.open('basicattributes', '_blank', `width=${popupWidth},height=${popupHeight},left=${left},top=${bottom},resizable=yes,scrollbars=yes`);
   }
 
   /**
@@ -1094,7 +1096,6 @@ export class MaintenanceSearchComponent extends AwagBaseComponent implements OnI
 
       
       selectedRowIndex: number = -1;
-
       // liu-mod 20250822 PRJ標準確認事項：選択解除
       onRowClick(row: any, index: number): void {
         const tblRadioId = 'list-awagSelected-' + index.toString();
@@ -1114,6 +1115,9 @@ export class MaintenanceSearchComponent extends AwagBaseComponent implements OnI
             this.selectedRowIndex = index;
             this.awagSelect(index, row);
         }
+      }
+      selectRow(index: number): void {
+        this.selectedRowIndex = index;
       }
 
       toZenkakuExample(str: string) {

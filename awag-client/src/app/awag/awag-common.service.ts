@@ -27,7 +27,7 @@ export class AwagCommonService {
   /**
    * コンパクト表示状態
    */
-  private _isCompactView = false;
+  private _isCompactView = true;
 
   /* 汎用的にコールバック管理 */
   private readonly callbacks: { [key in CallbackKey]?: (() => void)[] } = {};

@@ -349,6 +349,7 @@ table {
     border: none;
     background-color: #25AEAF;
     position: relative;
+    right: 0;
 }
 // 背景色とアイコン等を追加する
 .copy-btnTbl::after {
@@ -674,7 +675,7 @@ input:checked + .slider::before {
 // 色ルール１７番
 .alert-info {
     color: black !important;
-    background-color: #DCEFD8;
+    background-color: #E4F3F3;
 }
 // エラーメッセージ
 // 色ルール１５番
@@ -928,7 +929,8 @@ input:checked + .slider::before {
     overflow: visible !important;
 }
 
-.matTooltip {
+.cdk-overlay-container .cdk-overlay-pane .mat-Tooltip {
+    transform: translateX(-50%);
     left: 100%;
 }
 .tblCellCtrls {

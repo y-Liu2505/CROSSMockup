@@ -117,7 +117,7 @@
                           <!-- <button class="btn btn-outline-secondary copy-btn" type="button" (click)="copyToClipboard($event)"><img src="file:///C:/Users/y-liu/CharlieLau/004.Code/demo/awag-client/node_modules/material-design-icons/content/1x_web/ic_content_copy_white_18dp.png"></button> -->
                           <button class="btn copy-btn" type="button" (click)="copyToClipboard($event)"></button>
                         </div>
-                        <span class="explanation" matTooltip="フォント６番・文字色３番" matTooltipPosition="after">説明書きが入ります。</span>
+                        <!-- <span class="explanation" matTooltip="フォント６番・文字色３番" matTooltipPosition="after">説明書きが入ります。</span> -->
                         <div class="invalid-feedback cardno-feedback" id="_group0-cardno-feedback">{{ 'StringFormat.Type.HALF_NUM' | translateValidationMessage: 16: 16 }}</div>
                       </div>
                     </div>
@@ -525,7 +525,7 @@
                       <div class="has-validation">
                         <!-- <label class="form-label" for="_group0-landlabel">{{ 'awag.prj.uc.maintenance.sc.search.fl._group0.landlabel' | translate }}</label> -->
                         <div class="input-group awag-validity">
-                          <input class="form-control awag-validity landlabel placeHolder" id="_group0-landlabel" name="landlabel" type="text" placeholder="標板文字" [(ngModel)]="model.search.landlabel" #_group0_landlabel="ngModel" matTooltip="PlaceHolder: フォント４番・文字色３番" matTooltipPosition="above" />
+                          <input class="form-control awag-validity landlabel placeHolder" id="_group0-landlabel" name="landlabel" type="text" placeholder="" [(ngModel)]="model.search.landlabel" #_group0_landlabel="ngModel" matTooltip="PlaceHolder: フォント４番・文字色３番" matTooltipPosition="above" />
                         </div>
                         <div class="invalid-feedback landlabel-feedback" id="_group0-landlabel-feedback"></div>
                       </div>
@@ -539,7 +539,7 @@
                       <div class="has-validation">
                         <!-- <label class="form-label" for="_group0-landcode">{{ 'awag.prj.uc.maintenance.sc.search.fl._group0.landcode' | translate }}</label> -->
                         <div class="input-group awag-validity">
-                          <input class="form-control awag-validity landcode placeHolder" id="_group0-landcode" name="landcode" type="text" placeholder="陸事コード" pattern="[\x20-\x7E]{0,4}" [(ngModel)]="model.search.landcode" #_group0_landcode="ngModel" awagText />
+                          <input class="form-control awag-validity landcode placeHolder" id="_group0-landcode" name="landcode" type="text" placeholder="" pattern="[\x20-\x7E]{0,4}" [(ngModel)]="model.search.landcode" #_group0_landcode="ngModel" awagText />
                         </div>
                         <div class="invalid-feedback landcode-feedback" id="_group0-landcode-feedback">{{ 'StringFormat.Type.HALF_CHAR' | translateValidationMessage: 0: 4 }}</div>
                       </div>
@@ -553,7 +553,7 @@
                       <div class="has-validation">
                         <!-- <label class="form-label" for="_group0-registercode">{{ 'awag.prj.uc.maintenance.sc.search.fl._group0.registercode' | translate }}</label> -->
                         <div class="input-group awag-validity">
-                          <input class="form-control awag-validity registercode placeHolder" id="_group0-registercode" name="registercode" type="text" placeholder="登録番号種別(ｺｰﾄﾞ)" pattern="[\x20-\x7E]{0,4}" [(ngModel)]="model.search.registercode" #_group0_registercode="ngModel" awagText />
+                          <input class="form-control awag-validity registercode placeHolder" id="_group0-registercode" name="registercode" type="text" placeholder="" pattern="[\x20-\x7E]{0,4}" [(ngModel)]="model.search.registercode" #_group0_registercode="ngModel" awagText />
                         </div>
                         <div class="invalid-feedback registercode-feedback" id="_group0-registercode-feedback">{{ 'StringFormat.Type.HALF_CHAR' | translateValidationMessage: 0: 4 }}</div>
                       </div>
@@ -567,7 +567,7 @@
                       <div class="has-validation">
                         <!-- <label class="form-label" for="_group0-registerkana">{{ 'awag.prj.uc.maintenance.sc.search.fl._group0.registerkana' | translate }}</label> -->
                         <div class="input-group awag-validity">
-                          <input class="form-control awag-validity registerkana placeHolder" id="_group0-registerkana" name="registerkana" type="text" placeholder="登録番号種別(ｶﾅ)" pattern="[\x20-\x7E]{0,3}" [(ngModel)]="model.search.registerkana" #_group0_registerkana="ngModel" awagText />
+                          <input class="form-control awag-validity registerkana placeHolder" id="_group0-registerkana" name="registerkana" type="text" placeholder="" pattern="[\x20-\x7E]{0,3}" [(ngModel)]="model.search.registerkana" #_group0_registerkana="ngModel" awagText />
                         </div>
                         <div class="invalid-feedback registerkana-feedback" id="_group0-registerkana-feedback">{{ 'StringFormat.Type.HALF_CHAR' | translateValidationMessage: 0: 3 }}</div>
                       </div>
@@ -581,7 +581,7 @@
                       <div class="has-validation">
                         <!-- <label class="form-label" for="_group0-registerseq">{{ 'awag.prj.uc.maintenance.sc.search.fl._group0.registerseq' | translate }}</label> -->
                         <div class="input-group awag-validity">
-                          <input class="form-control awag-validity registerseq placeHolder" id="_group0-registerseq" name="registerseq" type="text" placeholder="登録番号連番" pattern="[0-9]{0,4}" [(ngModel)]="model.search.registerseq" #_group0_registerseq="ngModel" awagText />
+                          <input class="form-control awag-validity registerseq placeHolder" id="_group0-registerseq" name="registerseq" type="text" placeholder="" pattern="[0-9]{0,4}" [(ngModel)]="model.search.registerseq" #_group0_registerseq="ngModel" awagText />
                         </div>
                         <div class="invalid-feedback registerseq-feedback" id="_group0-registerseq-feedback">{{ 'StringFormat.Type.HALF_NUM' | translateValidationMessage: 0: 4 }}</div>
                       </div>
@@ -759,7 +759,7 @@
                       @if (!isVisibilityHidden('list','detailno')) {
                         <div [awagVisibility]="visibilityConfig['list']['detailno']">
                           <a class="link-body-emphasis link-underline link-underline-opacity-0 link-opacity-50-hover awagTableHeader-detailno" id="list-awagTableHeader-detailno" href="javascript:void(0)" [awagSortTable]="listListCtrl" sortKey="detailno">
-                            <span>{{ 'awag.prj.uc.maintenance.sc.search.fl.list.detailno' | translate }}</span>
+                            <span>{{ 'awag.prj.uc.maintenance.sc.search.fl.list.detailno' | translate }} </span>
                             <i class="bi bi-arrow-up"></i><i class="bi bi-arrow-down"></i>
                           </a>
                         </div>
@@ -917,7 +917,7 @@
                       <td class="align-top" scope="row">
                       @if (!isVisibilityHidden('list','awagSelect')) {
                         <div class="" [awagVisibility]="visibilityConfig['list']['awagSelect']">
-                          <input class="form-check-input" id="list-awagSelected-{{i}}" name="list-awagSelected-{{$any(item).$$awagIndex}}" type="radio" attr.aria-label="{{ 'awag.label.sc.list.select.label' | translate }}" [value]="item" [attr.value]="item" [(ngModel)]="listSelected" (click)="$event.stopPropagation()">
+                          <input class="form-check-input" id="list-awagSelected-{{i}}" name="list-awagSelected-{{$any(item).$$awagIndex}}" type="radio" attr.aria-label="{{ 'awag.label.sc.list.select.label' | translate }}" [value]="item" [attr.value]="item" [(ngModel)]="listSelected" (click)="onRowClick(item, i); $event.stopPropagation()">
                         </div>
                       }
                       </td>

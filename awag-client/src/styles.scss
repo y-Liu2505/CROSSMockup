@@ -37,7 +37,7 @@ body {
 // =====================================
 // AWAG Configurations
 // =====================================
-$color-theme-customize:                 false; // 紫色を基調としたカラー展開にします
+$color-theme-customize:                 true; // 紫色を基調としたカラー展開にします
 // =====================================
 // Bootstrap Configurations
 // =====================================
@@ -53,15 +53,15 @@ $grid-breakpoints: (
 @import "bootstrap/scss/variables";
 // Primary Colorのカスタマイズ
 @if $color-theme-customize {
-  $primary:                             $indigo;
+  $primary:                             #25AEAF;
   $theme-colors: map-merge($theme-colors, (
-    "primary":                          $primary
+    "primary":                          #25AEAF
   ));
-  $input-focus-border-color:            $primary;
-  $form-check-input-checked-bg-color:           $primary;
-  $form-check-input-checked-border-color:       $primary;
-  $form-check-input-indeterminate-bg-color:     $primary;
-  $form-check-input-indeterminate-border-color: $primary;
+  $input-focus-border-color:            #25AEAF;
+  $form-check-input-checked-bg-color:           #25AEAF;
+  $form-check-input-checked-border-color:       #25AEAF;
+  $form-check-input-indeterminate-bg-color:     #25AEAF;
+  $form-check-input-indeterminate-border-color: #25AEAF;
 }
 $awag-form-floating-input-padding-t :   $form-floating-input-padding-t;
 // Breadcrumb
@@ -72,78 +72,78 @@ $breadcrumb-divider:                    quote(">");
 // =====================================
 @if $color-theme-customize {
   :root {
-    --bs-primary-border-subtle:         #{$indigo-500};
-    --bs-focus-ring-color:              #{$indigo-200};
+    --bs-primary-border-subtle:         #25AEAF;
+    --bs-focus-ring-color:              tint-color(#25AEAF, 60%);
     .dropdown-menu {
-      --bs-dropdown-link-hover-color:   #{$indigo-700};
-      --bs-dropdown-link-hover-bg:      #{$indigo-100};
-      --bs-dropdown-link-active-bg:     #{$indigo-500};
+      --bs-dropdown-link-hover-color:   shade-color(#25AEAF, 40%);
+      --bs-dropdown-link-hover-bg:      tint-color(#25AEAF, 80%);
+      --bs-dropdown-link-active-bg:     #25AEAF;
     }
     .btn-close {
-      --bs-btn-close-focus-shadow:      0 0 0 0.25rem #{$indigo-200};
+      --bs-btn-close-focus-shadow:      0 0 0 0.25rem #25AEAF;
     }
     .btn-secondary {
       --bs-btn-disabled-opacity:        0.4;
     }
   }
   [data-bs-theme=dark] {
-    --awag-sidebar-link-color:          #{$indigo-100};
-    --awag-sidebar-link-bg:             #{$indigo-500};
-    --bs-primary-bg-subtle:             #{$indigo-500};
-    --bs-heading-color:                 #{$indigo-100};
-    --bs-body-color-rgb:                #{red($indigo-100)},#{green($indigo-100)},#{blue($indigo-100)};
-    --bs-link-color-rgb:                #{red($indigo-100)},#{green($indigo-100)},#{blue($indigo-100)};
-    --bs-link-hover-color-rgb:          #{red($indigo-500)},#{green($indigo-500)},#{blue($indigo-500)};
+    --awag-sidebar-link-color:          tint-color(#25AEAF, 80%);
+    --awag-sidebar-link-bg:             #25AEAF;
+    --bs-primary-bg-subtle:             #25AEAF;
+    --bs-heading-color:                 tint-color(#25AEAF, 80%);
+    --bs-body-color-rgb:                #{red(tint-color(#25AEAF, 80%))},#{green(tint-color(#25AEAF, 80%))},#{blue(tint-color(#25AEAF, 80%))};
+    --bs-link-color-rgb:                #{red(tint-color(#25AEAF, 80%))},#{green(tint-color(#25AEAF, 80%))},#{blue(tint-color(#25AEAF, 80%))};
+    --bs-link-hover-color-rgb:          #{red(#25AEAF)},#{green(#25AEAF)},#{blue(#25AEAF)};
     .btn-outline-primary {
-      --bs-btn-color:                   #{$indigo-100};
-      --bs-btn-border-color:            #{$indigo-100};
-      --bs-btn-hover-color:             #{$indigo-500};
-      --bs-btn-hover-bg:                #{$indigo-100};
-      --bs-btn-hover-border-color:      #{$indigo-100};
-      --bs-btn-active-color:            #{$indigo-500};
-      --bs-btn-active-bg:               #{$indigo-100};
-      --bs-btn-active-border-color:     #{$indigo-100};
+      --bs-btn-color:                   tint-color(#25AEAF, 80%);
+      --bs-btn-border-color:            tint-color(#25AEAF, 80%);
+      --bs-btn-hover-color:             #25AEAF;
+      --bs-btn-hover-bg:                tint-color(#25AEAF, 80%);
+      --bs-btn-hover-border-color:      tint-color(#25AEAF, 80%);
+      --bs-btn-active-color:            #25AEAF;
+      --bs-btn-active-bg:               tint-color(#25AEAF, 80%);
+      --bs-btn-active-border-color:     tint-color(#25AEAF, 80%);
     }
     .accordion {
-      --bs-accordion-active-color:      #{$indigo-100};
+      --bs-accordion-active-color:      tint-color(#25AEAF, 80%);
     }
     .accordion-button::after {
       --bs-accordion-btn-active-icon:     url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='rgb(224.4, 207.2, 252.4)' stroke-linecap='round' stroke-linejoin='round'><path d='M2 5L8 11L14 5'/></svg>");
       --bs-accordion-btn-icon:            url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='rgb(255, 255, 255)'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
     }
     .awag-bs-radio-label.form-label {
-      color:                            #{$indigo-100};
+      color:                            tint-color(#25AEAF, 80%);
     }
     .pagination {
-      --bs-pagination-color:            #{$indigo-100};
-      --bs-pagination-active-color:     #{$indigo-100};
-      --bs-pagination-active-bg:        #{$indigo-500};
-      --bs-pagination-active-border-color: #{$indigo-500};
+      --bs-pagination-color:            tint-color(#25AEAF, 80%);
+      --bs-pagination-active-color:     white;
+      --bs-pagination-active-bg:        #25AEAF;
+      --bs-pagination-active-border-color: #25AEAF;
     }
     .nav {
-      --bs-nav-link-color:              #{$indigo-500};
-      --bs-nav-link-hover-color:        #{$indigo-100};
+      --bs-nav-link-color:              #25AEAF;
+      --bs-nav-link-hover-color:        tint-color(#25AEAF, 80%);
     }
   }
   [data-bs-theme=light] {
-    --awag-sidebar-link-color:          #{$indigo-700};
-    --awag-sidebar-link-bg:             #{$indigo-100};
-    --bs-primary-bg-subtle:             #{$indigo-100};
-    --bs-body-color-rgb:                #{red($indigo-700)},#{green($indigo-700)},#{blue($indigo-700)};
-    --bs-link-color-rgb:                #{red($indigo-700)},#{green($indigo-700)},#{blue($indigo-700)};
-    --bs-link-hover-color-rgb:          #{red($indigo-500)},#{green($indigo-500)},#{blue($indigo-500)};
+    --awag-sidebar-link-color:          shade-color(#25AEAF, 40%);
+    --awag-sidebar-link-bg:             tint-color(#25AEAF, 80%);
+    --bs-primary-bg-subtle:             tint-color(#25AEAF, 80%);
+    --bs-body-color-rgb:                #{red(shade-color(#25AEAF, 40%))},#{green(shade-color(#25AEAF, 40%))},#{blue(shade-color(#25AEAF, 40%))};
+    --bs-link-color-rgb:                #{red(shade-color(#25AEAF, 40%))},#{green(shade-color(#25AEAF, 40%))},#{blue(shade-color(#25AEAF, 40%))};
+    --bs-link-hover-color-rgb:          #{red(#25AEAF)},#{green(#25AEAF)},#{blue(#25AEAF)};
     .awag-bs-radio-label.form-label {
-      color:                            #{$indigo-700};
+      color:                            shade-color(#25AEAF, 40%);
     }
     .pagination {
-      --bs-pagination-color:            #{$indigo-500};
-      --bs-pagination-active-color:     #{$indigo-500};
-      --bs-pagination-active-bg:        #{$indigo-100};
-      --bs-pagination-active-border-color: #{$indigo-100};
+      --bs-pagination-color:            #25AEAF;
+      --bs-pagination-active-color:     white;
+      --bs-pagination-active-bg:        #25AEAF !important;
+      --bs-pagination-active-border-color: #25AEAF !important;
     }
     .nav {
-      --bs-nav-link-color:              #{$indigo-500};
-      --bs-nav-link-hover-color:        #{$indigo-700};
+      --bs-nav-link-color:              #25AEAF;
+      --bs-nav-link-hover-color:        shade-color(#25AEAF, 40%);
     }
   }
 } @else {
